@@ -1,0 +1,46 @@
+#==============================================================
+#
+#  Name: RELEASE_NOTES
+#
+#  Rem:  This file describes release notes for
+#        the Klystron PyDM displays.
+#
+#==============================================================
+R1.1.0			K. Kim (ktkim): 09-Nov-2023
+				- Fix misconfigured PV names for Amplitude Loss Threshold and Phase Lock Threshold
+
+R1.0.9          G. Brown (gwbrown):  13-Oct-2023
+                LCLS: Add destination aware XTCA screens
+
+R1.0.8          K. Kim (ktkim): 25-Aug-2023
+				- Update rtm.ui to change Present Threshold to Present Value
+
+R1.0.7          K. Luchini (luchini):  02-Aug-2022
+                Add to cram
+
+R1.0.6          A. Le 28-Jan-2022
+                 - Add waveform label to Baseband I/Q Driver Waveform
+                   display
+
+R1.0.5          A. Le 27-Jan-2022
+                 - Change hls_complex_window.ui to hls_complex_window.py
+                   in RF DAC Out display
+
+R1.0.4          S. Vo 07-Apr-2021
+                 - Updated llrf amplitude block diagram to include local stylehseet
+                   to override issues with global stylesheet
+
+R1.0.3          J. Vasquez 05-Apr-2021
+                - Fix bad git merge. Changes from release R1.0.1 were not
+                  merged in master, so vesion R1.0.2 didn't include those
+                  changes. This version includes all changes.
+
+R1.0.2          S. Vo 05-Apr-2021
+                - Added new display for llrf amplitude block diagram
+
+R1.0.1          J. Vasquez 02-Feb-2021
+                - Fix stream labels, DAC0 and DAC1 were swapped.
+                  DAC0 = CLK PLL, and DAC1 = LO PLL
+
+R1.0.0          K. Luchini  29-Jan-2021
+                - Copied the pydm displays from the Klystron/pydm.

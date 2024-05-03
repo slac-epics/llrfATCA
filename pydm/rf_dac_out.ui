@@ -29,114 +29,6 @@
      <property name="topMargin">
       <number>10</number>
      </property>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_32">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>DAC Max</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="QLabel" name="label_31">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Inverted Correction</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_12">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Mode Select</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_33">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>DAC Offset</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="QLabel" name="label_30">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Correction Gain</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QLabel" name="label_29">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>LO Select</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="4">
       <widget class="PyDMEnumButton" name="PyDMEnumButton_8">
        <property name="sizePolicy">
@@ -218,6 +110,9 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:RFDACCORRGAIN</string>
@@ -338,52 +233,111 @@
        </property>
       </spacer>
      </item>
-     <item row="5" column="1">
-      <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_32">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>0</height>
-        </size>
+       <property name="text">
+        <string>DAC Max</string>
        </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>30</height>
-        </size>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
-       <property name="toolTip">
-        <string/>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_31">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEV}:RF_MODE</string>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
-       <property name="orientation" stdset="0">
-        <enum>Qt::Horizontal</enum>
+       <property name="text">
+        <string>Inverted Correction</string>
        </property>
-       <property name="marginTop" stdset="0">
-        <number>0</number>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
-       <property name="marginBottom" stdset="0">
-        <number>0</number>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
-       <property name="marginLeft" stdset="0">
-        <number>0</number>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
-       <property name="marginRight" stdset="0">
-        <number>0</number>
+       <property name="text">
+        <string>Mode Select</string>
        </property>
-       <property name="horizontalSpacing" stdset="0">
-        <number>0</number>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
-       <property name="verticalSpacing" stdset="0">
-        <number>0</number>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_33">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>DAC Offset</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_30">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Correction Gain</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_29">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>LO Select</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
      </item>
@@ -394,6 +348,9 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:RFDACOFFSET</string>
@@ -408,6 +365,9 @@
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:RFDACMAX</string>
        </property>
@@ -420,6 +380,9 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:RFDACMIN</string>
@@ -472,6 +435,28 @@
        </property>
        <property name="verticalSpacing" stdset="0">
         <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:RF_MODE</string>
        </property>
       </widget>
      </item>
@@ -575,6 +560,9 @@
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:BASEBAND_AMPL</string>
        </property>
@@ -618,6 +606,9 @@
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:BASEBAND_PHASE</string>
        </property>
@@ -634,12 +625,12 @@ Driver Waveforms</string>
        </property>
        <property name="filenames" stdset="0">
         <stringlist>
-         <string>hls_complex_window.ui</string>
+         <string>hls_complex_window.py</string>
         </stringlist>
        </property>
        <property name="macros" stdset="0">
         <stringlist>
-         <string>{&quot;TITLE&quot;:&quot;Baseband I/Q Driver Waveforms&quot;, &quot;R&quot;:&quot;BL&quot;, &quot;N&quot;:&quot;&quot;}</string>
+         <string>{&quot;TITLE&quot;:&quot;Baseband I/Q Driver Waveforms&quot;, &quot;LABEL&quot;:&quot;Baseband Waveform&quot;, &quot;R&quot;:&quot;BL&quot;, &quot;N&quot;:&quot;&quot;}</string>
         </stringlist>
        </property>
        <property name="openInNewWindow" stdset="0">
@@ -709,6 +700,9 @@ Driver Waveforms</string>
        </property>
        <property name="toolTip">
         <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:UCNV_VER</string>
@@ -901,6 +895,9 @@ Driver Waveforms</string>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:REF_AMPL0</string>
        </property>
@@ -1006,6 +1003,9 @@ Driver Waveforms</string>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:REF_PHASE1</string>
        </property>
@@ -1019,6 +1019,9 @@ Driver Waveforms</string>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:REF_AMPL1</string>
        </property>
@@ -1031,6 +1034,9 @@ Driver Waveforms</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${DEV}:REF_PHASE0</string>
@@ -1048,11 +1054,6 @@ Driver Waveforms</string>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>pydm.widgets.line_edit</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
@@ -1061,6 +1062,11 @@ Driver Waveforms</string>
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
   <customwidget>
    <class>PyDMEnumComboBox</class>

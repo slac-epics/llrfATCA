@@ -1,0 +1,3 @@
+[
+{"TCAV_LOCA": "DIAG0", "TCAV_UNIT": "11", "LOCA": "DIAG0", "UNIT": "11", "IOC_UNIT": "KY02", "INST": "1", "DESC": "SC", "SIOC": "SIOC:DIAG0:KY02"}
+]

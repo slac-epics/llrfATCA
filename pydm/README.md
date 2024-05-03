@@ -6,12 +6,18 @@ PyDM-based engineering screens for the LLRF_HLS project.
  * pydm
 
 ## Open display:
+* For controls IOCs:
 ```
-pydm -m "DEV=SIOC:B${BLD}:RF${RF}:${INST}, LOCA=B${BLD}, IOC_UNIT=RF${RF}, INST=${INST}" \
+pydm -m "DEV=KLYS:${LOCA}:${STN}1, IOC_UNIT=KY0${STN}, LOCA=${LOCA}, INST=0" \
+    atcaLLRF.py
+```
+
+* For diagnostics IOCs
+```
+pydm -m "DEV=KLYS:${LOCA}:${STN}1, IOC_UNIT=KY${STN}1, LOCA=${LOCA}, INST=0" \
     atcaLLRF.py
 ```
 
 Where:
-- `BLD`: is the building number (for example: `084`, `34`, etc.)
-- `RF`: is the RF station number (for example: `52`, `53`, etc.)
-- `INST`: is the instance number (for example: `0`)
+- LOCA : Accelerator area (for example: `LI10`)
+- STN : Klystron station number (for example: `2`)

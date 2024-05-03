@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1506</width>
+    <width>1600</width>
     <height>991</height>
    </rect>
   </property>
@@ -36,7 +36,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1486</width>
+        <width>1580</width>
         <height>971</height>
        </rect>
       </property>
@@ -157,6 +157,44 @@
               </property>
              </widget>
             </item>
+            <item row="5" column="3" colspan="2">
+             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Expert settings</string>
+              </property>
+              <property name="filenames" stdset="0">
+               <stringlist>
+                <string>fault_seq.ui</string>
+               </stringlist>
+              </property>
+              <property name="openInNewWindow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="3" colspan="2">
+             <widget class="QLabel" name="label_33">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Scale factors</string>
+              </property>
+             </widget>
+            </item>
             <item row="4" column="1">
              <widget class="PyDMLabel" name="PyDMLabel_2">
               <property name="toolTip">
@@ -211,6 +249,27 @@
               </property>
              </widget>
             </item>
+            <item row="1" column="3">
+             <widget class="QLabel" name="label_13">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Fault sequencer</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLabel" name="label_39">
+              <property name="text">
+               <string>Current mode</string>
+              </property>
+             </widget>
+            </item>
             <item row="5" column="1">
              <widget class="PyDMLabel" name="PyDMLabel_3">
               <property name="toolTip">
@@ -237,34 +296,8 @@
               </property>
              </widget>
             </item>
-            <item row="5" column="0">
-             <widget class="QLabel" name="label_20">
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>ADC Lock Status</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="5" column="2">
-             <spacer name="horizontalSpacer_5">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item row="2" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_27">
+            <item row="4" column="4">
+             <widget class="PyDMLabel" name="PyDMLabel_22">
               <property name="toolTip">
                <string/>
               </property>
@@ -272,14 +305,11 @@
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEV}:RTM_STATUS_HEX</string>
-              </property>
-              <property name="displayFormat" stdset="0">
-               <enum>PyDMLabel::Hex</enum>
+               <string>ca://${DEV}:BCUR_FLT</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="3">
+            <item row="7" column="3" colspan="2">
              <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
               <property name="font">
                <font>
@@ -303,21 +333,105 @@
               </property>
              </widget>
             </item>
-            <item row="1" column="3">
-             <widget class="QLabel" name="label_33">
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-                <underline>true</underline>
-               </font>
+            <item row="3" column="4">
+             <widget class="PyDMLabel" name="PyDMLabel_26">
+              <property name="toolTip">
+               <string/>
               </property>
-              <property name="text">
-               <string>Scale factors</string>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:FAULTSEQ_MODE</string>
               </property>
              </widget>
             </item>
+            <item row="4" column="3">
+             <widget class="QLabel" name="label_38">
+              <property name="text">
+               <string>Beam low current</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_20">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>ADC Lock Status</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="4">
+             <widget class="PyDMLabel" name="PyDMLabel_21">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:FAULTSEQ_STATUS</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>Current state</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_27">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:RTM_STATUS_HEX</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::Hex</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2" rowspan="7">
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
            </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
           <item>
            <spacer name="horizontalSpacer">
@@ -326,27 +440,14 @@
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>40</width>
+              <width>60</width>
               <height>20</height>
              </size>
             </property>
            </spacer>
           </item>
           <item>
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <layout class="QGridLayout" name="gridLayout_4">
+           <layout class="QGridLayout" name="gridLayout_4" rowstretch="0,0,0,0,0,0,0,0" rowminimumheight="0,0,0,0,0,0,0,0">
             <property name="leftMargin">
              <number>2</number>
             </property>
@@ -359,239 +460,10 @@
             <property name="bottomMargin">
              <number>2</number>
             </property>
-            <item row="0" column="3">
-             <widget class="QLabel" name="label_26">
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Current Threshold
-(raw)</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="2">
-             <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:SET_BV_ILK</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="2">
-             <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:SET_RE_ILK</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLabel" name="label_27">
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Current Threshold</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="QLabel" name="label_28">
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Set Threshold</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_25">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:RE_ILK</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_29">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>1</horstretch>
-                <verstretch>1</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Beam Current:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="3">
-             <widget class="PyDMLabel" name="PyDMLabel_7">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:RE_ILK_RAW</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:SET_BC_ILK</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="4">
-             <widget class="PyDMLineEdit" name="PyDMLineEdit">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:SET_BC_ILK_RAW</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_24">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:BV_ILK</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="PyDMLabel" name="PyDMLabel_23">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:BC_ILK</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_31">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>1</horstretch>
-                <verstretch>1</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Reflected Power:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="4">
-             <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>ca://${DEV}:SET_RE_ILK_RAW</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_30">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                <horstretch>1</horstretch>
-                <verstretch>1</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="styleSheet">
-               <string notr="true"/>
-              </property>
-              <property name="text">
-               <string>Beam Voltage:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="4">
+            <property name="verticalSpacing">
+             <number>6</number>
+            </property>
+            <item row="6" column="4">
              <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
               <property name="toolTip">
                <string/>
@@ -607,22 +479,24 @@
               </property>
              </widget>
             </item>
-            <item row="0" column="4">
-             <widget class="QLabel" name="label_25">
+            <item row="5" column="0">
+             <widget class="QLabel" name="label_29">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>1</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
               <property name="styleSheet">
                <string notr="true"/>
               </property>
               <property name="text">
-               <string>Set Threshold
-(raw)</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
+               <string>Beam Current:</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="3">
-             <widget class="PyDMLabel" name="PyDMLabel_5">
+            <item row="7" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_25">
               <property name="toolTip">
                <string/>
               </property>
@@ -633,11 +507,86 @@
                <bool>true</bool>
               </property>
               <property name="channel" stdset="0">
-               <string>ca://${DEV}:BC_ILK_RAW</string>
+               <string>ca://${DEV}:RE_ILK</string>
               </property>
              </widget>
             </item>
-            <item row="2" column="3">
+            <item row="0" column="1" colspan="3">
+             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>1</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>RF Interlock RTM Front Panel Image</string>
+              </property>
+              <property name="filenames" stdset="0">
+               <stringlist>
+                <string>rf_interlock_rtm_picture.ui</string>
+               </stringlist>
+              </property>
+              <property name="openInNewWindow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:SET_BV_ILK</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:SET_BC_ILK</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_23">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:BC_ILK</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="3">
              <widget class="PyDMLabel" name="PyDMLabel_6">
               <property name="toolTip">
                <string/>
@@ -653,6 +602,233 @@
               </property>
              </widget>
             </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_31">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>1</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Reflected Power:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="4">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:SET_BC_ILK_RAW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_24">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:BV_ILK</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="4">
+             <widget class="QLabel" name="label_25">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Set Threshold
+(raw)</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_27">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Present Value</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:SET_RE_ILK</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="PyDMLabel" name="PyDMLabel_5">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:BC_ILK_RAW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_30">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>1</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Beam Voltage:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="3">
+             <widget class="PyDMLabel" name="PyDMLabel_7">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:RE_ILK_RAW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="4">
+             <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://${DEV}:SET_RE_ILK_RAW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="label_28">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Set Threshold</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLabel" name="label_26">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Present Value
+(raw)</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="1">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>5</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
            </layout>
           </item>
           <item>
@@ -662,7 +838,23 @@
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>34</width>
+              <width>60</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
               <height>20</height>
              </size>
             </property>
@@ -931,7 +1123,7 @@
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST1_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST1_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -962,7 +1154,7 @@
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST3_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST3_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1102,7 +1294,7 @@
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST1_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST1_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1241,7 +1433,7 @@ Power</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST3_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST3_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1287,14 +1479,14 @@ Power</string>
               <string>Time (us)</string>
              </stringlist>
             </property>
-            <property name="yLabels">
-             <stringlist>
-              <string>Reflected Power (MW)</string>
-             </stringlist>
-            </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+            <property name="yLabels" stdset="0">
+             <stringlist>
+              <string>Reflected Power (MW)</string>
              </stringlist>
             </property>
            </widget>
@@ -1429,17 +1621,17 @@ Power</string>
               <string>Time (us)</string>
              </stringlist>
             </property>
-            <property name="yLabels">
-             <stringlist>
-              <string>Beam Current (A)</string>
-             </stringlist>
-            </property>
             <property name="showLegend">
              <bool>false</bool>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+            <property name="yLabels" stdset="0">
+             <stringlist>
+              <string>Beam Current (A)</string>
              </stringlist>
             </property>
            </widget>
@@ -1475,7 +1667,7 @@ Power</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST0_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST0_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1550,7 +1742,7 @@ Power</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST0_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST0_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1586,7 +1778,7 @@ Power</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST2_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST2_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1622,7 +1814,7 @@ Power</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST1_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST1_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1674,7 +1866,7 @@ Voltage</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST3_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST3_SCALED_RE_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#9eed36&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1755,7 +1947,7 @@ Voltage</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST2_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST2_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1802,7 +1994,7 @@ Voltage</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST0_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST0_SCALED_BCURR_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#57c8c1&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -1916,14 +2108,14 @@ Voltage</string>
               <string>Time (us)</string>
              </stringlist>
             </property>
-            <property name="yLabels">
-             <stringlist>
-              <string>Beam Voltage (kV)</string>
-             </stringlist>
-            </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+             </stringlist>
+            </property>
+            <property name="yLabels" stdset="0">
+             <stringlist>
+              <string>Beam Voltage (kV)</string>
              </stringlist>
             </property>
            </widget>
@@ -1959,7 +2151,7 @@ Voltage</string>
             </property>
             <property name="curves">
              <stringlist>
-              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST2_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+              <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:FAULTHIST2_SCALED_BVOLT_WF&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:RTM_WF_X&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#ff7ca6&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
              </stringlist>
             </property>
            </widget>
@@ -2785,16 +2977,6 @@ Voltage</string>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>pydm.widgets.line_edit</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMPushButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.pushbutton</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
    <header>pydm.widgets.waveformplot</header>
@@ -2808,6 +2990,16 @@ Voltage</string>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>

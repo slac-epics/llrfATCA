@@ -61,6 +61,11 @@
          <blue>222</blue>
         </color>
        </property>
+       <property name="yAxes">
+        <stringlist>
+         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+        </stringlist>
+       </property>
        <property name="title" stdset="0">
         <string>Amplitude Waveform - CH ${N}</string>
        </property>
@@ -69,17 +74,17 @@
          <string>Time (us)</string>
         </stringlist>
        </property>
-       <property name="yLabels">
-        <stringlist>
-         <string>Amplitude (norm)</string>
-        </stringlist>
-       </property>
        <property name="showLegend">
         <bool>false</bool>
        </property>
        <property name="curves">
         <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:AWF${N}&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;name&quot;: &quot;Amplitude&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:AWF${N}&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
+       </property>
+       <property name="yLabels" stdset="0">
+        <stringlist>
+         <string>Amplitude (norm)</string>
         </stringlist>
        </property>
       </widget>
@@ -102,6 +107,11 @@
          <blue>222</blue>
         </color>
        </property>
+       <property name="yAxes">
+        <stringlist>
+         <string>{&quot;name&quot;: &quot;Axis 1&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+        </stringlist>
+       </property>
        <property name="title" stdset="0">
         <string>Phase Waveform - CH ${N}</string>
        </property>
@@ -110,17 +120,17 @@
          <string>Time (us)</string>
         </stringlist>
        </property>
-       <property name="yLabels">
-        <stringlist>
-         <string>Phase (deg)</string>
-        </stringlist>
-       </property>
        <property name="showLegend">
         <bool>false</bool>
        </property>
        <property name="curves">
         <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:PWF${N}&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;name&quot;: &quot;Phase&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:PWF${N}&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Phase&quot;, &quot;color&quot;: &quot;cyan&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Axis 1&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
+       </property>
+       <property name="yLabels" stdset="0">
+        <stringlist>
+         <string>Phase (deg)</string>
         </stringlist>
        </property>
       </widget>

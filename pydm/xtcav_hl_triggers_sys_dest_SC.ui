@@ -1,0 +1,2058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,0,0,0,0,0">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <item row="14" column="4">
+      <widget class="QLabel" name="label_19">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Rate (Hz)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_RATE</string>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_10">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_LLRF_TDES</string>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>58</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>  STDBY</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="4" colspan="3">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="rightMargin">
+        <number>175</number>
+       </property>
+       <item>
+        <widget class="PyDMPushButton" name="PyDMPushButton_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>TS1</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_STDBY_TSMASK</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft">
+        <widget class="PyDMPushButton" name="PyDMPushButton_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>TS4</string>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="PyDMToolTip" stdset="0">
+          <string/>
+         </property>
+         <property name="monitorDisp" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_STDBY_TSMASK</string>
+         </property>
+         <property name="PyDMIcon" stdset="0">
+          <string/>
+         </property>
+         <property name="passwordProtected" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="password" stdset="0">
+          <string/>
+         </property>
+         <property name="protectedPassword" stdset="0">
+          <string/>
+         </property>
+         <property name="showConfirmDialog" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="confirmMessage" stdset="0">
+          <string>Are you sure you want to proceed?</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>8</string>
+         </property>
+         <property name="releaseValue" stdset="0">
+          <string>None</string>
+         </property>
+         <property name="relativeChange" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="writeWhenRelease" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft">
+        <widget class="PyDMPushButton" name="PyDMPushButton_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>TS1+TS4</string>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="PyDMToolTip" stdset="0">
+          <string/>
+         </property>
+         <property name="monitorDisp" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_STDBY_TSMASK</string>
+         </property>
+         <property name="PyDMIcon" stdset="0">
+          <string/>
+         </property>
+         <property name="passwordProtected" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="password" stdset="0">
+          <string/>
+         </property>
+         <property name="protectedPassword" stdset="0">
+          <string/>
+         </property>
+         <property name="showConfirmDialog" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="confirmMessage" stdset="0">
+          <string>Are you sure you want to proceed?</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>9</string>
+         </property>
+         <property name="releaseValue" stdset="0">
+          <string>None</string>
+         </property>
+         <property name="relativeChange" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="writeWhenRelease" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft">
+        <widget class="PyDMPushButton" name="PyDMPushButton_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Reset</string>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="PyDMToolTip" stdset="0">
+          <string/>
+         </property>
+         <property name="monitorDisp" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_STDBY_TSMASK</string>
+         </property>
+         <property name="PyDMIcon" stdset="0">
+          <string/>
+         </property>
+         <property name="passwordProtected" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="password" stdset="0">
+          <string/>
+         </property>
+         <property name="protectedPassword" stdset="0">
+          <string/>
+         </property>
+         <property name="showConfirmDialog" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="confirmMessage" stdset="0">
+          <string>Are you sure you want to proceed?</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>0</string>
+         </property>
+         <property name="releaseValue" stdset="0">
+          <string>None</string>
+         </property>
+         <property name="relativeChange" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="writeWhenRelease" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="9" column="5">
+      <widget class="QLabel" name="label_10">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_ACCL + d_LLRF (nsec)  = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="5">
+      <widget class="QLabel" name="label_15">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_STDBY + d_RTM (nsec)  = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_13">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_SSA_TDES</string>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_20">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Timeslot Mask (hex)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_9">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_SSA_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4" colspan="3">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="rightMargin">
+        <number>175</number>
+       </property>
+       <item>
+        <widget class="PyDMPushButton" name="PyDMPushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>TS1</string>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_ACCL_TSMASK</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>1</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft">
+        <widget class="PyDMPushButton" name="PyDMPushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>TS4</string>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="PyDMToolTip" stdset="0">
+          <string/>
+         </property>
+         <property name="monitorDisp" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_ACCL_TSMASK</string>
+         </property>
+         <property name="PyDMIcon" stdset="0">
+          <string/>
+         </property>
+         <property name="passwordProtected" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="password" stdset="0">
+          <string/>
+         </property>
+         <property name="protectedPassword" stdset="0">
+          <string/>
+         </property>
+         <property name="showConfirmDialog" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="confirmMessage" stdset="0">
+          <string>Are you sure you want to proceed?</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>8</string>
+         </property>
+         <property name="releaseValue" stdset="0">
+          <string>None</string>
+         </property>
+         <property name="relativeChange" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="writeWhenRelease" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft">
+        <widget class="PyDMPushButton" name="PyDMPushButton_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>TS1+TS4</string>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="PyDMToolTip" stdset="0">
+          <string/>
+         </property>
+         <property name="monitorDisp" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_ACCL_TSMASK</string>
+         </property>
+         <property name="PyDMIcon" stdset="0">
+          <string/>
+         </property>
+         <property name="passwordProtected" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="password" stdset="0">
+          <string/>
+         </property>
+         <property name="protectedPassword" stdset="0">
+          <string/>
+         </property>
+         <property name="showConfirmDialog" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="confirmMessage" stdset="0">
+          <string>Are you sure you want to proceed?</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>9</string>
+         </property>
+         <property name="releaseValue" stdset="0">
+          <string>None</string>
+         </property>
+         <property name="relativeChange" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="writeWhenRelease" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft">
+        <widget class="PyDMPushButton" name="PyDMPushButton_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Reset</string>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="PyDMToolTip" stdset="0">
+          <string/>
+         </property>
+         <property name="monitorDisp" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEV}:TRG_${DEST}_ACCL_TSMASK</string>
+         </property>
+         <property name="PyDMIcon" stdset="0">
+          <string/>
+         </property>
+         <property name="passwordProtected" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="password" stdset="0">
+          <string/>
+         </property>
+         <property name="protectedPassword" stdset="0">
+          <string/>
+         </property>
+         <property name="showConfirmDialog" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="confirmMessage" stdset="0">
+          <string>Are you sure you want to proceed?</string>
+         </property>
+         <property name="pressValue" stdset="0">
+          <string>0</string>
+         </property>
+         <property name="releaseValue" stdset="0">
+          <string>None</string>
+         </property>
+         <property name="relativeChange" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="writeWhenRelease" stdset="0">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="16" column="2">
+      <widget class="QLabel" name="label_46">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Destination Mode</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_14">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_RATE</string>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Destination Delay (nsec)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_MOD_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_23">
+       <property name="minimumSize">
+        <size>
+         <width>58</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>  ACCL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="1">
+      <widget class="QLabel" name="label_54">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Total Delays</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Rate (Hz)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="5">
+      <widget class="QLabel" name="label_14">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_STDBY + d_LLRF (nsec) = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLabel" name="label_53">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Total Delays</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="5">
+      <widget class="QLabel" name="label_11">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_ACCL + d_RTM (nsec)   = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="2">
+      <widget class="QLabel" name="label_45">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Timeslot Mask (hex)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLabel" name="label_22">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Destination Mask (Hex)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_11">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_RTM_TDES</string>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="5">
+      <widget class="QLabel" name="label_16">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_STDBY + d_MOD (nsec) = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="monitorDisp" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_TSMASK</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_TDES</string>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_TCTL</string>
+       </property>
+       <property name="items" stdset="0">
+        <stringlist/>
+       </property>
+       <property name="useCustomOrder" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="invertOrder" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="customOrder" stdset="0">
+        <stringlist/>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="checkable" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="monitorDisp" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_TSMASK</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_ACRATE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="2">
+      <widget class="QLabel" name="label_47">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Destination Mask (Hex)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="QLabel" name="label_18">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>AC Rate Marker</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="22" column="5">
+      <spacer name="verticalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>5</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="16" column="3">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_DESTMODE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="monitorDisp" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_DESTMASK</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="monitorDisp" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_DESTMASK</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLineEdit::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_DESTMODE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="5">
+      <widget class="QLabel" name="label_17">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_STDBY + d_SSA (nsec)  = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enable/Disable</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_12">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_MOD_TDES</string>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_LLRF_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="5">
+      <widget class="QLabel" name="label_12">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_ACCL + d_MOD (nsec)  = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="monitorDisp" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="5">
+      <widget class="QLabel" name="label_13">
+       <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_ACCL + d_SSA (nsec)   = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>AC Rate Marker</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="6">
+      <widget class="PyDMLabel" name="PyDMLabel_7">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_ACCL_RTM_TDES</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="2">
+      <widget class="QLabel" name="label_9">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST}+ d_STDBY (nsec) = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="3">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="14" column="3">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:TRG_${DEST}_STDBY_ACRATE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>15</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLabel" name="label_8">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>d_${DEST} + d_ACCL (nsec) = </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_21">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Destination Mode</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLabel" name="label_25">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>${DEST2}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumComboBox</class>
+   <extends>QComboBox</extends>
+   <header>pydm.widgets.enum_combo_box</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

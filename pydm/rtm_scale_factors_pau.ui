@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>324</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>${DEV} - RTM Scale Factors</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>IOC Information</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>${SIOC}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>IOC:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>5</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Voltage Divider Ratio</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>ADC Scale</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>ADC Scale</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Beam Current</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Current Transformer Ratio</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>ADC Scale</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Threshold Scale</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Threshold Scale</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Beam Voltage</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:CURR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:BC_WF_SCALE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:BC_ILK_SCALE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Threshold Scale</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Reflected Power</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DIVR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:BV_WF_SCALE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:BV_ILK_SCALE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:RE_WF_SCALE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:RE_ILK_SCALE</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

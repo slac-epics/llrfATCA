@@ -384,7 +384,7 @@ Delay</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">qproperty-visible: false;</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>Event Code</string>
@@ -490,7 +490,7 @@ Delay</string>
        </property>
        <property name="minimumSize">
         <size>
-         <width>120</width>
+         <width>100</width>
          <height>0</height>
         </size>
        </property>
@@ -501,7 +501,7 @@ Delay</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">qproperty-visible: false;</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string/>

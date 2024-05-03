@@ -69,6 +69,32 @@ class ComplexWindow(Display):
         self.time_interval_setup()
         self.value_setup()
         self.write_pv_setup()
+        self.addChannels('Amplitude', 0)
+        self.addChannels('Phase', 0)
+
+    def addChannels(self, variable, choice):
+        if variable == 'Amplitude':
+            abbrv = ':A'
+            wf = ':AWF'
+            plot = self.amplitude_plot
+        else:
+            abbrv = ':P'
+            wf = ':PWF'
+            plot = self.phase_plot
+
+        x_address = 'ca://' + self._device + ':XWF'
+        y_address = 'ca://' + self._device + abbrv + self._record + self._index + '_RBV'
+
+        plot.addChannel(y_address, x_address, color = 'red', lineWidth = 2, name = 'Average Window')
+
+        y_address = 'ca://' + self._device + wf + str(choice)
+
+        plot.addChannel(y_address, x_address, color = 'blue', lineWidth = 2, name = 'Measurement')
+
+    def clearPlots(self):
+        for plot in [self.amplitude_plot, self.phase_plot]:
+            plot.removeCurveAtIndex(0)
+            plot.removeCurveAtIndex(0)
 
     def time_interval_setup(self):
         """
@@ -124,30 +150,37 @@ class ComplexWindow(Display):
         Process changes in the input selection menu
         """
         # Get the current list of amplitude curves
-        curves = self.amplitude_plot.getCurves()
-
+        #curves = self.amplitude_plot.getCurves()
+        #self.amplitude_plot.removeCurveAtIndex(0)
+        #self.amplitude_plot.removeCurveAtIndex(0)
         # The measurement signal is the second in the list.
         # It PV name is ${DEV}:AWF${INDEX}
         # Change it to point to the selected index
-        curves[1] = re.sub("{}:AWF\d".format(self._device),
-                           "{}:AWF{}".format(self._device, index),
-                           curves[1])
+        #curves[1] = re.sub("{}:AWF\d".format(self._device),
+         #                  "{}:AWF{}".format(self._device, index),
+          #                 curves[1])
 
         # Send back the modified list
-        self.amplitude_plot.setCurves(curves)
+        #self.amplitude_plot.setCurves(curves)
 
         # Get the current list of phase curves
-        curves = self.phase_plot.getCurves()
+        #curves = self.phase_plot.getCurves()
 
         # The measurement signal is the second in the list.
         # It PV name is ${DEV}:PWF${INDEX}
         # Change it to point to the selected index
-        curves[1] = re.sub("{}:PWF\d".format(self._device),
-                           "{}:PWF{}".format(self._device,  index),
-                           curves[1])
+        #curves[1] = re.sub("{}:PWF\d".format(self._device),
+            #               "{}:PWF{}".format(self._device,  index),
+             #              curves[1])
 
         # Send back the modified list
-        self.phase_plot.setCurves(curves)
+        #self.phase_plot.setCurves(curves)
+
+        ## New method of changing input
+        ## T. Kabana 05/2022
+        self.clearPlots()
+        self.addChannels('Amplitude', index)
+        self.addChannels('Phase', index)
 
     def get_amplitude_start(self):
         """

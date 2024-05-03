@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Demodulator - ${DEV}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_25">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>${SIOC}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>IOC: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label_18">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>IOC Information</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Demod Version</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLabel" name="PyDMLabel_73">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_VER</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_42">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_28">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch7:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_44">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_26">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch5:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_48">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_27">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch4:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_30">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch8:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>DC_IN_1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_47">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_29">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch6:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_32">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch10:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_22">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_6">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch1:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_33">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch11:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_20">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_40">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_45">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_21">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_39">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_23">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_19">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_43">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_24">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_38">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="2">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_OUT_MON</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_16">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_21">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_8">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_20">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_18">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_41">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_14">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_15">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_17">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="2">
+      <widget class="QLabel" name="label_13">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>TRIG_MON</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_17">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_24">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch3:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_46">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_31">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch9:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_13">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_25">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch2:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_18">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ch0:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_22">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_14">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="6">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_7">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_PHASE6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_23">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_24">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>RF_IN_6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="PyDMLabel" name="PyDMLabel_37">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_AMPL5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="PyDMLabel" name="PyDMLabel_19">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_PHASE2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="7">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_16">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_ROT_AMPL3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL0</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL1</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL2</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL3</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_5">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL4</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_7">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL6</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_8">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL7</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_6">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL5</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_9">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL8</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_10">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL9</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_11">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL10</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="3">
+      <widget class="PyDMLabel" name="PyDMLabel_12">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:DMOD_LABEL11</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="3">
+      <widget class="QLabel" name="label_22">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Down Converter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="3">
+      <widget class="QLabel" name="label_23">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Up Converter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_34">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Signal name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_15">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Phase (deg)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLabel" name="label_17">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Amplitude (norm)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="QLabel" name="label_20">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Phase (deg)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="QLabel" name="label_21">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set Amplitude (norm)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

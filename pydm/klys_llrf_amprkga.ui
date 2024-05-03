@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="PyDMFrame" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>R&amp;K GA11424BW200-5757RP</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,1">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,2,0,1,0">
+     <property name="topMargin">
+      <number>16</number>
+     </property>
+     <property name="bottomMargin">
+      <number>16</number>
+     </property>
+     <item>
+      <widget class="PyDMPushButton" name="PyDMPushButton">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>RF ENABLE</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P}:RFEnable</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMPushButton" name="PyDMPushButton_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>RF DISABLE</string>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P}:RFEnable</string>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+       <property name="minimumSize">
+        <size>
+         <width>26</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P}:RFEnableRBV</string>
+       </property>
+       <property name="offColor" stdset="0">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>4</blue>
+        </color>
+       </property>
+       <property name="showLabels" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="circles" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="labels" stdset="0">
+        <stringlist>
+         <string>Running</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="rules" stdset="0">
+        <string>[{&quot;name&quot;: &quot;StoppedText&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;initial_value&quot;: &quot;Stopped&quot;, &quot;expression&quot;: &quot;\&quot;RF Disabled\&quot; if ch[0] == 0 else \&quot;RF Enabled\&quot;&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${P}:RFEnableRBV&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: false}], &quot;notes&quot;: &quot;&quot;}]</string>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string/>
+       </property>
+       <property name="enableRichText" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMPushButton" name="PyDMPushButton_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>RESET</string>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string>Reboot the device</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P}:FaultIntReset</string>
+       </property>
+       <property name="showConfirmDialog" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="confirmMessage" stdset="0">
+        <string/>
+       </property>
+       <property name="pressValue" stdset="0">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="formGroupBox">
+     <property name="title">
+      <string>RF Power Status</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Forward Power</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="PyDMLineEdit" name="PyDMLineEdit">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="showUnits" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:FwdPwr</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Reflected Power</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="showUnits" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:RefPwr</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="gridGroupBox">
+     <property name="title">
+      <string>Faults</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" alignment="Qt::AlignLeft">
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string>Forward power must be in range 10-600 watts</string>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:FwdPwrFault</string>
+        </property>
+        <property name="onColor" stdset="0">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>4</blue>
+         </color>
+        </property>
+        <property name="offColor" stdset="0">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RF Forward Power Limit</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" alignment="Qt::AlignLeft">
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string>If this trips, the device has overheated.</string>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:TempFault</string>
+        </property>
+        <property name="onColor" stdset="0">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>4</blue>
+         </color>
+        </property>
+        <property name="offColor" stdset="0">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>Temperature Limit</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" alignment="Qt::AlignLeft">
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string>Reflected power must be in range 10-250 Watts</string>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:RefPwrFault</string>
+        </property>
+        <property name="onColor" stdset="0">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>4</blue>
+         </color>
+        </property>
+        <property name="offColor" stdset="0">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RF Reflected Power Limit</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" alignment="Qt::AlignLeft">
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string>10v power supply status.</string>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:10VPSFault</string>
+        </property>
+        <property name="onColor" stdset="0">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>4</blue>
+         </color>
+        </property>
+        <property name="offColor" stdset="0">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>10V Power Supply</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" alignment="Qt::AlignLeft">
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string>48v power supply status</string>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:48VPSFault</string>
+        </property>
+        <property name="onColor" stdset="0">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>4</blue>
+         </color>
+        </property>
+        <property name="offColor" stdset="0">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>48V Power Supply</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" alignment="Qt::AlignLeft">
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string>Pulse width must be &lt;= 6uS and &lt;2% duty cycle. If it exceeds 6uS and/or 2% duty cycle, this fault is tripped</string>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://${P}:PulseWidthFault</string>
+        </property>
+        <property name="onColor" stdset="0">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>4</blue>
+         </color>
+        </property>
+        <property name="offColor" stdset="0">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="showLabels" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="bigEndian" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="numBits" stdset="0">
+         <number>1</number>
+        </property>
+        <property name="shift" stdset="0">
+         <number>0</number>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>Pulse Width Limit</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMFrame</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.frame</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -37,7 +37,7 @@
         <x>0</x>
         <y>0</y>
         <width>1169</width>
-        <height>1366</height>
+        <height>1339</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -378,7 +378,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AREF04</string>
+              <string>ca://${DEV}:AREF02</string>
              </property>
             </widget>
            </item>
@@ -400,7 +400,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_AVG04</string>
+              <string>ca://${DEV}:BVOLT_AVG02</string>
              </property>
             </widget>
            </item>
@@ -439,7 +439,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T4:PREQ_OFFSET</string>
+              <string>ca://${DEV}:T2:PREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -471,7 +471,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT04</string>
+              <string>ca://${DEV}:PACT02</string>
              </property>
             </widget>
            </item>
@@ -613,7 +613,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ASET04</string>
+              <string>ca://${DEV}:ASET02</string>
              </property>
             </widget>
            </item>
@@ -629,7 +629,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PSET07</string>
+              <string>ca://${DEV}:PSET03</string>
              </property>
             </widget>
            </item>
@@ -642,7 +642,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS10</string>
+              <string>TS 4</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -661,7 +661,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PREF13</string>
+              <string>ca://${DEV}:PREF05</string>
              </property>
             </widget>
            </item>
@@ -677,7 +677,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ADES13</string>
+              <string>ca://${DEV}:ADES05</string>
              </property>
             </widget>
            </item>
@@ -732,7 +732,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PSET16</string>
+              <string>ca://${DEV}:PSET06</string>
              </property>
             </widget>
            </item>
@@ -793,7 +793,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_AVG16</string>
+              <string>ca://${DEV}:AACT_AVG06</string>
              </property>
             </widget>
            </item>
@@ -809,7 +809,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ADES10</string>
+              <string>ca://${DEV}:ADES04</string>
              </property>
             </widget>
            </item>
@@ -822,7 +822,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS13</string>
+              <string>TS 5</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -838,7 +838,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS13</string>
+              <string>TS 5</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -857,7 +857,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T13:AREQ_OFFSET</string>
+              <string>ca://${DEV}:T5:AREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -873,7 +873,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_AVG13</string>
+              <string>ca://${DEV}:PACT_AVG05</string>
              </property>
             </widget>
            </item>
@@ -934,7 +934,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_PK_SLOW10</string>
+              <string>ca://${DEV}:BVOLT_PK_SLOW04</string>
              </property>
             </widget>
            </item>
@@ -950,7 +950,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_JITT07</string>
+              <string>ca://${DEV}:AACT_JITT03</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -969,7 +969,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_JITT04</string>
+              <string>ca://${DEV}:PACT_JITT02</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -1004,7 +1004,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PREF04</string>
+              <string>ca://${DEV}:PREF02</string>
              </property>
             </widget>
            </item>
@@ -1020,7 +1020,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PDES10</string>
+              <string>ca://${DEV}:PDES04</string>
              </property>
             </widget>
            </item>
@@ -1036,7 +1036,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PDES07</string>
+              <string>ca://${DEV}:PDES03</string>
              </property>
             </widget>
            </item>
@@ -1075,7 +1075,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_JITT10</string>
+              <string>ca://${DEV}:PACT_JITT04</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -1091,7 +1091,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS10</string>
+              <string>TS 4</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1107,7 +1107,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS NT
+              <string>TS 0
 (Combined)</string>
              </property>
              <property name="alignment">
@@ -1127,7 +1127,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_JITT10</string>
+              <string>ca://${DEV}:AACT_JITT04</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -1146,7 +1146,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PSET04</string>
+              <string>ca://${DEV}:PSET02</string>
              </property>
             </widget>
            </item>
@@ -1185,7 +1185,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_JITT16</string>
+              <string>ca://${DEV}:PACT_JITT06</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -1226,7 +1226,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT16</string>
+              <string>ca://${DEV}:AACT06</string>
              </property>
             </widget>
            </item>
@@ -1242,7 +1242,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PSET13</string>
+              <string>ca://${DEV}:PSET05</string>
              </property>
             </widget>
            </item>
@@ -1258,7 +1258,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T16:AREQ_OFFSET</string>
+              <string>ca://${DEV}:T6:AREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -1274,7 +1274,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_AVG04</string>
+              <string>ca://${DEV}:AACT_AVG02</string>
              </property>
             </widget>
            </item>
@@ -1296,7 +1296,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_AVG16</string>
+              <string>ca://${DEV}:BVOLT_AVG06</string>
              </property>
             </widget>
            </item>
@@ -1312,7 +1312,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T10:AREQ_OFFSET</string>
+              <string>ca://${DEV}:T4:AREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -1353,7 +1353,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PDES04</string>
+              <string>ca://${DEV}:PDES02</string>
              </property>
             </widget>
            </item>
@@ -1382,7 +1382,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS04</string>
+              <string>TS 2</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1401,7 +1401,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ADES16</string>
+              <string>ca://${DEV}:ADES06</string>
              </property>
             </widget>
            </item>
@@ -1417,7 +1417,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ASET10</string>
+              <string>ca://${DEV}:ASET04</string>
              </property>
             </widget>
            </item>
@@ -1430,7 +1430,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS04</string>
+              <string>TS 2</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1449,7 +1449,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT10</string>
+              <string>ca://${DEV}:PACT04</string>
              </property>
             </widget>
            </item>
@@ -1487,7 +1487,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_JITT07</string>
+              <string>ca://${DEV}:BVOLT_JITT03</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -1503,7 +1503,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS16</string>
+              <string>TS 6</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1541,7 +1541,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PREF07</string>
+              <string>ca://${DEV}:PREF03</string>
              </property>
             </widget>
            </item>
@@ -1563,7 +1563,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_PK_SLOW07</string>
+              <string>ca://${DEV}:BVOLT_PK_SLOW03</string>
              </property>
             </widget>
            </item>
@@ -1579,7 +1579,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PREF10</string>
+              <string>ca://${DEV}:PREF04</string>
              </property>
             </widget>
            </item>
@@ -1595,7 +1595,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT10</string>
+              <string>ca://${DEV}:AACT04</string>
              </property>
             </widget>
            </item>
@@ -1611,7 +1611,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T7:PREQ_OFFSET</string>
+              <string>ca://${DEV}:T3:PREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -1627,7 +1627,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_JITTNT</string>
+              <string>ca://${DEV}:PACT_JITT00</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -1652,7 +1652,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_AVG10</string>
+              <string>ca://${DEV}:BVOLT_AVG04</string>
              </property>
             </widget>
            </item>
@@ -1665,7 +1665,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS07</string>
+              <string>TS 3</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1697,7 +1697,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS NT
+              <string>TS 0
 (Combined)</string>
              </property>
              <property name="alignment">
@@ -1717,7 +1717,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT13</string>
+              <string>ca://${DEV}:PACT05</string>
              </property>
             </widget>
            </item>
@@ -1752,7 +1752,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS01</string>
+              <string>TS 1</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -1771,7 +1771,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AREF10</string>
+              <string>ca://${DEV}:AREF04</string>
              </property>
             </widget>
            </item>
@@ -1787,7 +1787,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_JITT16</string>
+              <string>ca://${DEV}:AACT_JITT06</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -1812,7 +1812,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_PK_SLOW04</string>
+              <string>ca://${DEV}:BVOLT_PK_SLOW02</string>
              </property>
             </widget>
            </item>
@@ -1851,7 +1851,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PDES13</string>
+              <string>ca://${DEV}:PDES05</string>
              </property>
             </widget>
            </item>
@@ -1873,7 +1873,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_PK_SLOW16</string>
+              <string>ca://${DEV}:BVOLT_PK_SLOW06</string>
              </property>
             </widget>
            </item>
@@ -1905,7 +1905,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AREF16</string>
+              <string>ca://${DEV}:AREF06</string>
              </property>
             </widget>
            </item>
@@ -1927,7 +1927,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_AVGNT</string>
+              <string>ca://${DEV}:BVOLT_AVG00</string>
              </property>
             </widget>
            </item>
@@ -1959,7 +1959,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_JITT07</string>
+              <string>ca://${DEV}:PACT_JITT03</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2001,7 +2001,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_AVG13</string>
+              <string>ca://${DEV}:AACT_AVG05</string>
              </property>
             </widget>
            </item>
@@ -2017,7 +2017,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_JITTNT</string>
+              <string>ca://${DEV}:AACT_JITT00</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2042,7 +2042,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_AVG13</string>
+              <string>ca://${DEV}:BVOLT_AVG05</string>
              </property>
             </widget>
            </item>
@@ -2058,7 +2058,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_AVG04</string>
+              <string>ca://${DEV}:PACT_AVG02</string>
              </property>
             </widget>
            </item>
@@ -2080,7 +2080,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_JITT04</string>
+              <string>ca://${DEV}:BVOLT_JITT02</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2099,7 +2099,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT13</string>
+              <string>ca://${DEV}:AACT05</string>
              </property>
             </widget>
            </item>
@@ -2115,7 +2115,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT04</string>
+              <string>ca://${DEV}:AACT02</string>
              </property>
             </widget>
            </item>
@@ -2131,7 +2131,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_JITT13</string>
+              <string>ca://${DEV}:PACT_JITT05</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2150,7 +2150,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ADES04</string>
+              <string>ca://${DEV}:ADES02</string>
              </property>
             </widget>
            </item>
@@ -2166,7 +2166,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_AVG10</string>
+              <string>ca://${DEV}:PACT_AVG04</string>
              </property>
             </widget>
            </item>
@@ -2182,7 +2182,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT07</string>
+              <string>ca://${DEV}:PACT03</string>
              </property>
             </widget>
            </item>
@@ -2204,7 +2204,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_PK_SLOW13</string>
+              <string>ca://${DEV}:BVOLT_PK_SLOW05</string>
              </property>
             </widget>
            </item>
@@ -2220,7 +2220,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_AVG16</string>
+              <string>ca://${DEV}:PACT_AVG06</string>
              </property>
             </widget>
            </item>
@@ -2282,7 +2282,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_JITT13</string>
+              <string>ca://${DEV}:AACT_JITT05</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2301,7 +2301,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T13:PREQ_OFFSET</string>
+              <string>ca://${DEV}:T5:PREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -2323,7 +2323,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_JITT13</string>
+              <string>ca://${DEV}:BVOLT_JITT05</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2342,7 +2342,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ADES07</string>
+              <string>ca://${DEV}:ADES03</string>
              </property>
             </widget>
            </item>
@@ -2358,7 +2358,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T4:AREQ_OFFSET</string>
+              <string>ca://${DEV}:T2:AREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -2380,7 +2380,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_JITT10</string>
+              <string>ca://${DEV}:BVOLT_JITT04</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2399,7 +2399,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT07</string>
+              <string>ca://${DEV}:AACT03</string>
              </property>
             </widget>
            </item>
@@ -2421,7 +2421,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_JITT16</string>
+              <string>ca://${DEV}:BVOLT_JITT06</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2440,7 +2440,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T7:AREQ_OFFSET</string>
+              <string>ca://${DEV}:T3:AREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -2456,7 +2456,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_AVGNT</string>
+              <string>ca://${DEV}:PACT_AVG00</string>
              </property>
             </widget>
            </item>
@@ -2472,7 +2472,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PDES16</string>
+              <string>ca://${DEV}:PDES06</string>
              </property>
             </widget>
            </item>
@@ -2488,7 +2488,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_AVG10</string>
+              <string>ca://${DEV}:AACT_AVG04</string>
              </property>
             </widget>
            </item>
@@ -2501,7 +2501,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS01</string>
+              <string>TS 1</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -2520,7 +2520,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PSET10</string>
+              <string>ca://${DEV}:PSET04</string>
              </property>
             </widget>
            </item>
@@ -2552,7 +2552,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T16:PREQ_OFFSET</string>
+              <string>ca://${DEV}:T6:PREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -2568,7 +2568,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ASET07</string>
+              <string>ca://${DEV}:ASET03</string>
              </property>
             </widget>
            </item>
@@ -2584,7 +2584,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ASET16</string>
+              <string>ca://${DEV}:ASET06</string>
              </property>
             </widget>
            </item>
@@ -2600,7 +2600,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_AVG07</string>
+              <string>ca://${DEV}:AACT_AVG03</string>
              </property>
             </widget>
            </item>
@@ -2616,7 +2616,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AREF07</string>
+              <string>ca://${DEV}:AREF03</string>
              </property>
             </widget>
            </item>
@@ -2654,7 +2654,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_JITTNT</string>
+              <string>ca://${DEV}:BVOLT_JITT00</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2670,7 +2670,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS07</string>
+              <string>TS 3</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -2689,7 +2689,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_JITT04</string>
+              <string>ca://${DEV}:AACT_JITT02</string>
              </property>
              <property name="displayFormat" stdset="0">
               <enum>PyDMLabel::Exponential</enum>
@@ -2708,7 +2708,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:ASET13</string>
+              <string>ca://${DEV}:ASET05</string>
              </property>
             </widget>
            </item>
@@ -2724,7 +2724,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT_AVG07</string>
+              <string>ca://${DEV}:PACT_AVG03</string>
              </property>
             </widget>
            </item>
@@ -2737,7 +2737,7 @@
               </font>
              </property>
              <property name="text">
-              <string>TS16</string>
+              <string>TS 6</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -2779,7 +2779,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AREF13</string>
+              <string>ca://${DEV}:AREF05</string>
              </property>
             </widget>
            </item>
@@ -2801,7 +2801,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:BVOLT_AVG07</string>
+              <string>ca://${DEV}:BVOLT_AVG03</string>
              </property>
             </widget>
            </item>
@@ -2817,7 +2817,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:AACT_AVGNT</string>
+              <string>ca://${DEV}:AACT_AVG00</string>
              </property>
             </widget>
            </item>
@@ -2878,7 +2878,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PREF16</string>
+              <string>ca://${DEV}:PREF06</string>
              </property>
             </widget>
            </item>
@@ -2894,7 +2894,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:PACT16</string>
+              <string>ca://${DEV}:PACT06</string>
              </property>
             </widget>
            </item>
@@ -2910,7 +2910,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${DEV}:T10:PREQ_OFFSET</string>
+              <string>ca://${DEV}:T4:PREQ_OFFSET</string>
              </property>
             </widget>
            </item>
@@ -2989,7 +2989,7 @@
            </property>
            <widget class="QWidget" name="tab">
             <attribute name="title">
-             <string>Avergare Window 0 for Feedback</string>
+             <string>Average Window 0 for Feedback</string>
             </attribute>
             <layout class="QHBoxLayout" name="horizontalLayout">
              <item>
@@ -3064,7 +3064,7 @@
            </widget>
            <widget class="QWidget" name="tab_2">
             <attribute name="title">
-             <string>Avergare Window 1 for Diagnostic</string>
+             <string>Average Window 1 for Diagnostic</string>
             </attribute>
             <layout class="QVBoxLayout" name="verticalLayout_3">
              <item>
@@ -3139,7 +3139,7 @@
            </widget>
            <widget class="QWidget" name="tab_3">
             <attribute name="title">
-             <string>Avergare Window 2 for Diagnostic</string>
+             <string>Average Window 2 for Diagnostic</string>
             </attribute>
             <layout class="QVBoxLayout" name="verticalLayout_5">
              <item>

@@ -146,12 +146,22 @@
        <property name="showYGrid">
         <bool>true</bool>
        </property>
+       <property name="backgroundColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
        <property name="axisColor">
         <color>
          <red>222</red>
          <green>222</green>
          <blue>222</blue>
         </color>
+       </property>
+       <property name="yAxes">
+        <stringlist/>
        </property>
        <property name="title" stdset="0">
         <string>Average Window ${N} - Amplitude</string>
@@ -161,18 +171,15 @@
          <string>Time (us)</string>
         </stringlist>
        </property>
-       <property name="yLabels">
-        <stringlist>
-         <string>Amplitude (norm)</string>
-        </stringlist>
-       </property>
        <property name="showLegend">
         <bool>true</bool>
        </property>
        <property name="curves">
+        <stringlist/>
+       </property>
+       <property name="yLabels" stdset="0">
         <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:A${R}${N}_RBV&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;name&quot;: &quot;${LABEL}&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:AWF0&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;name&quot;: &quot;Measurement&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+         <string>Amplitude (norm)</string>
         </stringlist>
        </property>
       </widget>
@@ -234,12 +241,22 @@
        <property name="showYGrid">
         <bool>true</bool>
        </property>
+       <property name="backgroundColor">
+        <color>
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
        <property name="axisColor">
         <color>
          <red>222</red>
          <green>222</green>
          <blue>222</blue>
         </color>
+       </property>
+       <property name="yAxes">
+        <stringlist/>
        </property>
        <property name="title" stdset="0">
         <string>Average Window ${N} - Phase</string>
@@ -249,18 +266,15 @@
          <string>Time (us)</string>
         </stringlist>
        </property>
-       <property name="yLabels">
-        <stringlist>
-         <string>Phase (deg)</string>
-        </stringlist>
-       </property>
        <property name="showLegend">
         <bool>true</bool>
        </property>
        <property name="curves">
+        <stringlist/>
+       </property>
+       <property name="yLabels" stdset="0">
         <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:P${R}${N}_RBV&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;name&quot;: &quot;${LABEL}&quot;, &quot;color&quot;: &quot;#ff557f&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
-         <string>{&quot;y_channel&quot;: &quot;ca://${DEV}:PWF0&quot;, &quot;x_channel&quot;: &quot;ca://${DEV}:XWF&quot;, &quot;name&quot;: &quot;Measurement&quot;, &quot;color&quot;: &quot;#5500ff&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+         <string>Phase (deg)</string>
         </stringlist>
        </property>
       </widget>

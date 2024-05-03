@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>776</width>
+    <height>54</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>${LOCA} (${DESC})</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>${SIOC_CTRL}</string>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string/>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>xtcav_atcaLLRF_pau.py</string>
+        </stringlist>
+       </property>
+       <property name="titles" stdset="0">
+        <stringlist/>
+       </property>
+       <property name="showIcon" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="macros" stdset="0">
+        <stringlist>
+         <string>DEV=TCAV:${TCAV_LOCA}:${TCAV_UNIT}:${INST_CTRL}, LOCA=${LOCA}, IOC_UNIT=${UNIT}, INST=${INST_CTRL}, SIOC=${SIOC_CTRL}</string>
+        </stringlist>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="passwordProtected" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="password" stdset="0">
+        <string/>
+       </property>
+       <property name="protectedPassword" stdset="0">
+        <string/>
+       </property>
+       <property name="followSymlinks" stdset="0">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>${SIOC_DIAG}</string>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alarmSensitiveBorder" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="PyDMToolTip" stdset="0">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string/>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>xtcav_atcaLLRF_pau.py</string>
+        </stringlist>
+       </property>
+       <property name="titles" stdset="0">
+        <stringlist/>
+       </property>
+       <property name="showIcon" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="macros" stdset="0">
+        <stringlist>
+         <string>DEV=TCAV:${TCAV_LOCA}:${TCAV_UNIT}:${INST_DIAG}, LOCA=${LOCA}, IOC_UNIT=${UNIT}, INST=${INST_DIAG}, SIOC=${SIOC_DIAG}</string>
+        </stringlist>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="passwordProtected" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="password" stdset="0">
+        <string/>
+       </property>
+       <property name="protectedPassword" stdset="0">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

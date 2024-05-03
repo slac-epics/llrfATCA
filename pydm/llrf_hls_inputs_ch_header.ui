@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>515</width>
+    <width>500</width>
     <height>55</height>
    </rect>
   </property>
@@ -28,6 +28,68 @@
    </property>
    <item>
     <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item row="1" column="5">
+      <widget class="QLabel" name="label_13">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>POC</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_89">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Signal name</string>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label_57">
        <property name="sizePolicy">
@@ -59,34 +121,6 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="3">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>70</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="4">
       <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
        <property name="sizePolicy">
@@ -103,7 +137,7 @@
        </property>
        <property name="maximumSize">
         <size>
-         <width>16777215</width>
+         <width>70</width>
          <height>0</height>
         </size>
        </property>
@@ -131,11 +165,101 @@
        </property>
        <property name="maximumSize">
         <size>
-         <width>16777215</width>
+         <width>200</width>
          <height>0</height>
         </size>
        </property>
        <property name="toolTip">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_90">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_91">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
         <string/>
        </property>
       </widget>
@@ -187,7 +311,7 @@
        </property>
        <property name="maximumSize">
         <size>
-         <width>16777215</width>
+         <width>70</width>
          <height>0</height>
         </size>
        </property>
@@ -199,38 +323,26 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
-      <widget class="QLabel" name="label_89">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Signal name</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QLabel" name="label_11">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Reference
-Weight</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="4">
       <widget class="QLabel" name="label_12">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -246,12 +358,24 @@ Weight</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="5">
-      <widget class="QLabel" name="label_13">
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_11">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
-         <width>60</width>
+         <width>70</width>
          <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="font">
@@ -261,7 +385,8 @@ Weight</string>
         </font>
        </property>
        <property name="text">
-        <string>POC</string>
+        <string>Reference
+Weight</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>515</width>
+    <width>500</width>
     <height>25</height>
    </rect>
   </property>
@@ -28,53 +28,37 @@
    </property>
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="1">
-      <widget class="QLabel" name="label">
+     <item row="0" column="4">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
-         <width>100</width>
+         <width>70</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>100</width>
+         <width>70</width>
          <height>16777215</height>
         </size>
        </property>
-       <property name="font">
-        <font>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
+       <property name="toolTip">
+        <string/>
        </property>
-       <property name="text">
-        <string>${AMC_CH}</string>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_57">
-       <property name="minimumSize">
-        <size>
-         <width>50</width>
-         <height>0</height>
-        </size>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
        </property>
-       <property name="maximumSize">
-        <size>
-         <width>50</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Ch${CH}:</string>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:FBWGT${CH}</string>
        </property>
       </widget>
      </item>
@@ -112,37 +96,59 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="4">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_11">
+     <item row="0" column="1">
+      <widget class="QLabel" name="label">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
         </sizepolicy>
        </property>
        <property name="minimumSize">
         <size>
-         <width>70</width>
+         <width>100</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>70</width>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>${AMC_CH}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="PyDMLabel" name="PyDMLabel_149">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
          <height>16777215</height>
         </size>
        </property>
        <property name="toolTip">
         <string/>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <property name="alarmSensitiveContent" stdset="0">
-        <bool>true</bool>
-       </property>
        <property name="channel" stdset="0">
-        <string>ca://${DEV}:FBWGT${CH}</string>
+        <string>ca://${DEV}:DMOD_LABEL${CH}</string>
+       </property>
+       <property name="displayFormat" stdset="0">
+        <enum>PyDMLabel::String</enum>
        </property>
       </widget>
      </item>
@@ -180,28 +186,34 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_149">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_57">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
-         <width>100</width>
+         <width>50</width>
          <height>0</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>100</width>
+         <width>50</width>
          <height>16777215</height>
         </size>
        </property>
-       <property name="toolTip">
-        <string/>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
-       <property name="channel" stdset="0">
-        <string>ca://${DEV}:DMOD_LABEL${CH}</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLabel::String</enum>
+       <property name="text">
+        <string>Ch${CH}:</string>
        </property>
       </widget>
      </item>

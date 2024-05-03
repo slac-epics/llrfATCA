@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>282</width>
+    <width>300</width>
     <height>214</height>
    </rect>
   </property>
@@ -34,8 +34,8 @@
    <property name="horizontalSpacing">
     <number>15</number>
    </property>
-   <item row="2" column="3">
-    <widget class="QLabel" name="label_26">
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_22">
      <property name="font">
       <font>
        <pointsize>8</pointsize>
@@ -45,10 +45,203 @@
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>ADC1 IC</string>
+      <string>RF IN 3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_8">
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEV}:DMOD_LABEL7</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::String</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLabel" name="label_21">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Signal name</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QLabel" name="label_29">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>DAC IC</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_24">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>TRIG</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_19">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>RF IN 1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_20">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>RF OUT</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_17">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Att.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEV}:UPC_ATTEN3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEV}:UPC_ATTEN2</string>
      </property>
     </widget>
    </item>
@@ -118,135 +311,6 @@
      </property>
     </widget>
    </item>
-   <item row="7" column="3">
-    <widget class="PyDMLabel" name="PyDMLabel_3">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEV}:UPC_TEMP1</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="3">
-    <widget class="QLabel" name="label_18">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>1</horstretch>
-       <verstretch>1</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Temp.</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="3">
-    <widget class="PyDMLabel" name="PyDMLabel">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEV}:UPC_TEMP2</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="2">
-    <widget class="PyDMLineEdit" name="PyDMLineEdit_15">
-     <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEV}:UPC_ATTEN3</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_19">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>RF IN 1</string>
-     </property>
-    </widget>
-   </item>
    <item row="3" column="2">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_13">
      <property name="minimumSize">
@@ -277,17 +341,90 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_7">
+   <item row="4" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_9">
      <property name="minimumSize">
       <size>
-       <width>100</width>
+       <width>130</width>
        <height>0</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>100</width>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEV}:DMOD_LABEL8</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::String</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEV}:UPC_TEMP1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="label_26">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>ADC1 IC</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_7">
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
@@ -299,6 +436,30 @@
      </property>
      <property name="displayFormat" stdset="0">
       <enum>PyDMLabel::String</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="label_18">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>1</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Temp.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </item>
@@ -317,14 +478,33 @@
      </property>
     </widget>
    </item>
-   <item row="5" column="2">
-    <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+   <item row="5" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_10">
      <property name="minimumSize">
       <size>
-       <width>30</width>
+       <width>130</width>
        <height>0</height>
       </size>
      </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${DEV}:DMOD_LABEL9</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::String</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="PyDMLabel" name="PyDMLabel">
      <property name="font">
       <font>
        <pointsize>8</pointsize>
@@ -336,44 +516,20 @@
      <property name="styleSheet">
       <string notr="true"/>
      </property>
-     <property name="showUnits" stdset="0">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
       <bool>true</bool>
      </property>
      <property name="alarmSensitiveContent" stdset="0">
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${DEV}:UPC_ATTEN2</string>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="label_22">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>RF IN 3</string>
-     </property>
-    </widget>
-   </item>
-   <item row="7" column="0">
-    <widget class="QLabel" name="label_24">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>TRIG</string>
+      <string>ca://${DEV}:UPC_TEMP2</string>
      </property>
     </widget>
    </item>
@@ -422,30 +578,6 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="2">
-    <widget class="QLabel" name="label_17">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>1</horstretch>
-       <verstretch>1</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Att.</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
    <item row="2" column="2">
     <widget class="PyDMLineEdit" name="PyDMLineEdit_12">
      <property name="minimumSize">
@@ -473,138 +605,6 @@
      </property>
      <property name="channel" stdset="0">
       <string>ca://${DEV}:UPC_ATTEN0</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_10">
-     <property name="minimumSize">
-      <size>
-       <width>100</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEV}:DMOD_LABEL9</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="QLabel" name="label_21">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-       <horstretch>1</horstretch>
-       <verstretch>1</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Signal name</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_8">
-     <property name="minimumSize">
-      <size>
-       <width>100</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEV}:DMOD_LABEL7</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
-    </widget>
-   </item>
-   <item row="4" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_9">
-     <property name="minimumSize">
-      <size>
-       <width>100</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>100</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEV}:DMOD_LABEL8</string>
-     </property>
-     <property name="displayFormat" stdset="0">
-      <enum>PyDMLabel::String</enum>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="0">
-    <widget class="QLabel" name="label_20">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>RF OUT</string>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="3">
-    <widget class="QLabel" name="label_29">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>DAC IC</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </item>

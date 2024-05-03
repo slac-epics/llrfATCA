@@ -378,24 +378,8 @@
      <property name="spacing">
       <number>7</number>
      </property>
-     <item row="6" column="1">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="alarmSensitiveContent" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_SEQNUM</string>
-       </property>
-       <property name="displayFormat" stdset="0">
-        <enum>PyDMLineEdit::Hex</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QLabel" name="label_7">
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_6">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -403,47 +387,31 @@
         </font>
        </property>
        <property name="text">
-        <string>Destination Mode </string>
+        <string>AC Rate</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
-       <property name="toolTip">
-        <string/>
+       <property name="text">
+        <string>Seq Bit (hex)</string>
        </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_FIXEDRATE</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_4">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_DESTMODE</string>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+     <item row="4" column="1">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
          <horstretch>1</horstretch>
@@ -454,7 +422,7 @@
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_RATEMODE</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_ACRATE</string>
        </property>
       </widget>
      </item>
@@ -480,14 +448,8 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="4">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-         <horstretch>1</horstretch>
-         <verstretch>1</verstretch>
-        </sizepolicy>
-       </property>
+     <item row="6" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
        <property name="toolTip">
         <string/>
        </property>
@@ -495,15 +457,15 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_DESTMASK</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_SEQBIT</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::Hex</enum>
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QLabel" name="label_6">
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_10">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -511,15 +473,15 @@
         </font>
        </property>
        <property name="text">
-        <string>AC Rate</string>
+        <string>Timeslot Mask (hex)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="4" column="1">
-      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
+     <item row="2" column="1">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
          <horstretch>1</horstretch>
@@ -530,7 +492,23 @@
         <string/>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_ACRATE</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_FIXEDRATE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_RATEMODE</string>
        </property>
       </widget>
      </item>
@@ -544,22 +522,6 @@
        </property>
        <property name="text">
         <string>Fixed Rate</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="4">
-      <widget class="QLabel" name="label_9">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Destination Mask (hex)</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -582,67 +544,73 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
-      <widget class="QLabel" name="label_10">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
+     <item row="2" column="3">
+      <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
        </property>
-       <property name="text">
-        <string>Timeslot Mak (hex)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLabel" name="label_11">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Seq Engine(hex)</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="2">
-      <widget class="QLabel" name="label_14">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Seq Bit (Hex)</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="2">
-      <widget class="PyDMLineEdit" name="PyDMLineEdit_5">
        <property name="toolTip">
         <string/>
        </property>
-       <property name="showUnits" stdset="0">
-        <bool>true</bool>
+       <property name="channel" stdset="0">
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_DESTMODE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Destination Mode </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
        </property>
        <property name="alarmSensitiveContent" stdset="0">
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_SEQBIT</string>
+        <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:CH${NN}_DESTMASK</string>
        </property>
        <property name="displayFormat" stdset="0">
         <enum>PyDMLineEdit::Hex</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Destination Mask (hex)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -662,14 +630,14 @@
    <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
-   <class>PyDMLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>pydm.widgets.line_edit</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMEnumComboBox</class>
    <extends>QComboBox</extends>
    <header>pydm.widgets.enum_combo_box</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>547</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LLRF Feedback Expert Settings - ${DEV}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>IOC: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>${SIOC}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>IOC Information</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>5</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="9" column="1" colspan="2">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:STRMENB</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Feedback settings</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>RMS Recursion Num. Samples (~1/Gain)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="1" colspan="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_74">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:VARNSAMPLE_NT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0" colspan="3">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="11" column="1" colspan="2">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:OPMODE</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Amplitude Loop Gain</string>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QLabel" name="label_20">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>RMS settings</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="2">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Upper limit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>Amplitude Correction (ratio)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Phase Loop Gain</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_51">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:ADRVUPL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0" colspan="3">
+      <widget class="QLabel" name="label_12">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Feedback limits</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" colspan="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_46">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:AGAIN</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Feedback POC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_49">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:ACORUPL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_52">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:ADRVLOL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_47">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:PCORUPL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>Phase Correction (deg)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Ref. POC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Amplitude Threshold</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_48">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:PCORLOL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1" colspan="2">
+      <widget class="PyDMEnumButton" name="PyDMEnumButton_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{font: 8px;}</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:REFSUBENB</string>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="marginTop" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginBottom" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginLeft" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="marginRight" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing" stdset="0">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Reference Subtraction</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="1" colspan="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_65">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:VARNSAMPLE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1" colspan="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_72">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:ATHRED</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" colspan="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_44">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:FBPOC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>Amplitude Drive (scaled)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_43">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:REFPOC</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Lower limit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="1">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_50">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:ACORLOL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Stream</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Type of Feedback</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1" colspan="2">
+      <widget class="PyDMLineEdit" name="PyDMLineEdit_45">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${DEV}:PGAIN</string>
+       </property>
+      </widget>
+     </item>
+     <item row="21" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>RMS Recursion Num. Samples (non-timeslot) (~1/Gain)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="0" colspan="3">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

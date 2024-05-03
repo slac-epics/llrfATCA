@@ -320,12 +320,6 @@ epicsThreadSleep(10.)
 ##########################
 dbpf $(TCAV_PREFIX):ABL.PROC            1
 dbpf $(TCAV_PREFIX):PBL.PROC            1
-#dbpf $(TCAV_PREFIX):ICPXWND0.PROC       1
-#dbpf $(TCAV_PREFIX):QCPXWND0.PROC       1
-#dbpf $(TCAV_PREFIX):ICPXWND1.PROC       1
-#dbpf $(TCAV_PREFIX):QCPXWND1.PROC       1
-#dbpf $(TCAV_PREFIX):ICPXWND2.PROC       1
-#dbpf $(TCAV_PREFIX):QCPXWND2.PROC       1
 dbpf $(TCAV_PREFIX):ACPXWND0.PROC       1
 dbpf $(TCAV_PREFIX):PCPXWND0.PROC       1
 dbpf $(TCAV_PREFIX):ACPXWND1.PROC       1
