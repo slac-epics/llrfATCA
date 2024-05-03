@@ -1,0 +1,425 @@
+
+#==============================================================
+#
+#  Name: RELEASE_NOTES
+#
+#  Rem:  This files describes release notes for
+#        the XXX IOC Application.
+#
+#  Auth: xx-Dec-2012, XXX         (xxx)
+#  Rev:  dd-mmm-yyyy, Reviewer's Name    (USERNAME)
+#--------------------------------------------------------------
+R3.0.1-16.0  Kukhee Kim
+             - build against llrfHlsAsyn R4.7.0
+               automation to recalculate SC BSA dequantization parameters, slope and offset for BSA linear conversion
+             - enable BSSS
+             - add SC mode firmware 9b5476a, using latched 360Hz timestamp to align fast PV, BSA and BSSS
+
+
+R3.0.1-15.0  Kukhee Kim
+             - build against llrfHlsAsyn R4.5.0
+               to use egineering scale for amplitude waveform
+
+R3.0.1-14.0  Kukhee Kim
+             - build against llrfHlsAsyn R4.4.0
+               to support NT PVs (no-timeslot-aware beam rate PVs
+               (workaround until SC BSA and related services are ready)
+
+             - add SC mode firmware 0374f97, first working verson firmware for quantization
+               tcav2_v1.3.0
+                   3ba6e5ccd23fd2d7b6e0881772622574e029da9e ../../../submodules/amc-carrier-core (v4.10.1-12-g3ba6e5cc)
+                   86cd53c133b97a88d83cb8f978a15fb46743c3b0 ../../../submodules/lcls-timing-core (v3.7.0)
+                   e6795eea8704cf0c014fbfd4f116e8d39c0ef826 ../../../submodules/llrf-core (R2.1.0)
+                   220a07a5a3ffb286eeb0ef0bb3e23cf21f8605fd ../../../submodules/ruckus (v4.7.1)
+                   d9db0b592c122ee66afca6bb0007a30fac783b67 ../../../submodules/surf (v2.38.1)
+                   f7cde6eabd3fa9702ac8ce5cba1cda3cc4893cb9 ../../../submodules/sysgen-dsp-lib (v1.1.2-8-gf7cde6e)
+
+               remark) software is compatible with old firmware
+
+R3.0.1-13.0  Kukhee Kim
+             - Prepare SC mode application
+             - algin API and modules
+                   timing/hpsTpr      R2.5.0
+                   timing/bsa         R2.6.0
+                   ATCACommon         R1.6.2-2.0
+                   yamlLoader         R2.3.5
+                   tprTrigger         R2.5.3-4.0-2
+                   tprPattern         R2.3.7
+                   BsaCore            R1.5.6
+                   timingApi          R0.9
+                   event              R4.5.5-1.0
+                   bsaDriver          R4.2.0
+                   RFCommon           R1.7.6
+                   llrfAmcAsyn        R1.0.3
+                   llrfHlsAsyn        R4.3.0
+                   iterlockRtmAsyn    R2.0.4-1.0
+              - add STCAV ioc, sioc-diag0-ky02
+              - use diag0 as destination name for STCAV
+              - use separate database templates for NC XTCAV, SC XTCAV and SC STCAV
+              - operaion mode Disable/Accel/Stdby
+              - SC mode BSA (fixed mode, for test purpose)
+              - align NC XTCAV, SC XTCAV and SC STCAV to the same software
+
+remarks)  firmware version for XTCAV
+              NC mode application: 8a5d96 (LlrfGen2)
+              SC mode application: 1e520e1 (LlrfTCav2)
+          firmware version for STCAV
+              SC mode application: 1e520e1 (LlrfTCav2)
+              fixed mode SC mode BSA (no statistical data support), first working version for SC BSA
+
+
+
+
+R3.0.1-12.0  Kukhee Kim (Nov 7, 2023)
+             - build against llfHlsAsyn R4.2.0 
+               PV name change for high-level trigger PVs,  SSB --> SSA
+
+
+R3.0.1-11.0  Kukhee Kim (Nov 7, 2023)
+             - add workaround to avoid timeslot-awareness issue
+               . reprogram first 8 channels of triggers
+               . apply hard-coded delay for the internal trigger (ch0 to ch 6)
+             - align TPR PV name and KLYS PV name in B15 (rf11 and rf12) to the production
+               using DMP0:1 for TPR PVs and RTM PVs  
+
+R3.0.1-10.0  Kukhee Kim (Oct 6, 2023)
+             - Support XTCAV
+               . destination-aware
+               . permutation index for average window
+               . 4 colons PV names
+             - build against llrfHlsAsyn R4.1.5-2.0
+             - build against ATCACommon  R1.6.2-1.0
+             - build against rf/llrfHls  R4.3.0-2.0
+             - work wih firmware 8a5d996
+             - put pbpf() to start triggers and DaqMux() without external script
+             - put dbpf() for some default vaules ex, theshold for the RTM interlock
+             - change unit unber from 361 to 360 for the B15 test stand
+             - using amplitude and phase waveforms for the baseband, fixing autosave issue
+
+
+
+R3.0.1-br  Kukhee Kim (May 5, 2021)
+           branch out from R3.0.1 to test tprTrigger R2.0.0-br (using the experimental sequencer for UED)
+           add sioc-as01-ky03 for UED 1080Hz commissioning (June 20, 2021)
+           - sioc-as01-ky01; for formal operation
+           - sioc-as01-ky03; for 1080Hz commissioning
+
+           update pyDM screens for the following issues
+           - add UED Special Mode on the timing screen
+           - fix PV name for End Frame Count on the timing screen
+           - add Sequencer Engine Number PV on the timing screen
+
+R3.0.1     Kukhee Kim (Mar 2, 2021)
+           - pick-up latest BsaCore and event module to avoid c++ exception handling and BsaCore thread crash issue
+           - pick-up latest llrfHlsAsyn to use the same code base for both FACET-II and UED
+           - pick-up Jesus' latest changes after R2.7.6
+           - build with:
+                  BsaCore          R1.5.4
+                  event            R4.5.5
+                  llrfHlsAsyn      R4.0.1
+                  interlockRtmAsyn R2.0.1
+
+                  timing/hpsTpr    R1.2.0
+                  rf/llrfHls       R4.3.0
+                  tprTrigger       R2.0.0
+                  tprPattern       R2.0.0
+
+             remark) firmware 74149d6 for FACET-II
+                     firmware cbaceab for UED 1kHz
+
+
+
+R3.0.0     Kukhee Kim (Mar 1, 2021)
+          - merge ued_support_v2 branch to support both FACET-II and UED with the same code base
+          - build with:
+                  timing/hpsTpr    R1.2.0
+                  rf/llrfHls       R4.3.0
+                  tprTrigger       R2.0.0
+                  tprPattern       R2.0.0
+                  llrfHlsAsyn      R4.0.0
+                  interlockRtmAsyn R2.0.0
+             remark) firmware 74149d6 for FACET-II
+                     firmware cbaceab for UED 1kHz
+
+
+ued_support_v2   Kukhee Kim (Mar 1, 2021)
+           - build with:
+                  timing/hpsTpr    R1.2.0
+                  rf/llrfHls       R4.3.0
+                  tprTrigger       R2.0.0
+                  tprPattern       R2.0.0
+                  llrfHlsAsyn      R4.0.0
+                  interlockRtmAsyn R2.0.0
+
+
+ued_support_v2   Kukhee Kim (Mar 1, 2021)
+           - new firmware to support UED 1kHz/restore back TS0 and added up non-timeslot aware statistics
+           - new firmware for facet to align the sub-modules with UED LLRF
+             both FACET-II and UED firmware have the following submodules
+
+             d5b04ce0fe817c6a319d49b4e22efb5af4ebe7a9 firmware/submodules/amc-carrier-core (v4.0.0)
+             94e6afe4e69c62adca6e8f3b7c03c27805f8ba8f firmware/submodules/lcls-timing-core (v3.2.2)
+             5c81b41073354eddfee329d6b95b7b8d859952a9 firmware/submodules/llrf-core (R1.0.0-80-g5c81b41)
+             995711841c198c9eb539aaa00676152e5ac5c4d5 firmware/submodules/ruckus (v2.7.3)
+             081638c012a109d0cb460818990947f83f65defe firmware/submodules/surf (v2.10.0)
+             63af71c640eebed8aa1dc77ecd900709ddf741d2 firmware/submodules/sysgen-dsp-lib (v1.1.2-7-g63af71c)
+
+           - upgrade rf/llrfHls R4.3.0 to support a new firmware
+             remark) firmware 74149d6 for FACET-II
+                     firmware cbaceab for UED 1kHz
+
+ued_support_v2   Kukhee Kim (Feb 2, 2021)
+           - branch out from R2.7.5 to support UED 1kHz 
+           - release new firmware a6211d4 for UED 1kHz operation - pick up recent update on llrf-core submodule
+           - new firmware to support 1kHz UED - a6211d4 (TS0 is not restore back completely)
+           - Bo complted 1kHz SSSB test with this version software and firmware (Feb 26, 2021)
+
+
+Un-tagged Changes by Jesus Vasquez
+
+            - PyDM: Fix stream labels, DAC0 and DAC1 were swapped.
+              DAC0 = CLK PLL, and DAC1 = LO PLL
+
+R2.7.6      Jesus Vasquez (Jan 12, 2021)
+            - Update llrfHlsAsyn to version R3.8.0 and interlockRtmAsyn to version R1.10.0.
+            - PyDM: bring all compatibles changes from the Klystron app.
+
+
+R2.7.5      Kukhee Kim (Jan 8, 2021)
+            - release new firmware 24213c2 - bug fix in the previous firmware 0109006
+            - clean up firmware image
+            remark) firmware 24213c2 for FACET-II
+                    firmware 0ad9a77 for UED 1kHz
+
+R2.7.4      Kukhee Kim (Jan 8, 2021)
+            - add new firmware 0109006 - allow to bring up amplitude from zero without disable the amplitude feedback
+            - clean up firmware image
+            remark) firmware 0109006 for FACET-II
+                    firmware 0ad9a77 for UED 1kHz
+
+R2.7.3      Kukhee Kim (Jan 5, 2021)
+            - add firmware image d6827b2 - to avoid amplitude glitch (amplitude jump) during the feeedback is diabled
+            - clean up firmware image
+            remark) firmware d6827b2 for FACET-II
+                    firmware 0ad9a77 for UED 1kHz
+
+
+R2.7.2      Kukhee Kim (Dec 11, 2020)
+            - add firmware image 61aa077 - safety stop, ADES=0 makes ASET=0 immediately
+            - clean up firmware image
+            remark) firmware 61aa077  for FACET-II
+                    firmware 0ad9a77  for UED 1kHz
+
+
+R2.7.1      Kukhee Kim (Dec 8, 2020)
+            - add firmware image 7d04ebd  - activate the drive limit when only the feedback is enabled
+            - clean up firmware images
+            remark) firmware 7d04ebd  for FACET-II
+                    firmware 0ad9a77  for UED 1kHz
+
+R2.7.0      Kukhee Kim (Nov 23, 2020)
+            - use firmware 9a735f9 (add feedback status registers)
+            - build with llrfHls R4.2.1
+            - build with llrfHlsAsyn R3.7.1
+            - build with interlockRtmAsyn R1.8.3
+
+R2.6.4      Kukhee Kim (Oct 26, 2020)
+            clean up firmware image:
+            - firmware 12a4afc - reference subtractions for all of channels and windows
+            - firmware 0ad9a77 - prototype for UED 1kHz
+
+R2.6.3      Kukhee Kim (Oct 24, 2020)
+            add REF_SELECT PVs in RF DAC into the autosave
+            - build with RFCommon R1.7.1
+
+R2.6.2      Kukhee Kim (Oct 22, 2020)
+            - add UED 1kHz firmware - 0ad9a77, boot up sioc-b084-rf60
+
+R2.6.1      Kukhee Kim (Oct 21, 2020)
+            - build with llrfHlsAsyn R3.5.1
+
+R2.6.0      Kukhee Kim (Oct 16, 2020)
+            - implement periodic update for RF measurement waveforms
+            - build with llrfHlsAsyn R3.5.0
+
+R2.5.0      Jesus Vasquez (Oct 15, 2020)
+            - Update interlockRtmAsyn module to version R1.7.0. This includes
+              the new PERV PV, and restore the RTM Forward Power PVs.
+            - PyDM: add Perveance PV to RTM screen
+
+R2.4.0      Jesus Vasquez (Oct 14, 2020)
+            - Update llrfHlsAsyn module to version R3.4.0. This includes new Power calcualtion
+              PVs for each windows and channels, and power scale factor for each channel.
+            - PyDM: Add new power scale and calculation PVs to HLS screen.
+            - PyDM: fix "peak" labels.
+
+R2.3.1      Jesus Vasquez (Oct 12, 2020)
+            - PyDM: Plot phase and amplitude waveforms for IQ measurements.
+
+R2.3.0       Kukhee Kim (Oct 10, 2020)
+            - add phase waveform and amplitude waveform for IQ measurement
+            - build with:
+                  llrfHlsAsyn      R3.3.3
+
+R2.2.0       Kukhee Kim (Oct 10, 2020)
+            - upgrade firmware to 28524a1
+            - add recursion gain for rms/mean calculations for non-timeslot aware variables
+            - build with:
+                  llrfHls          R4.1.2
+                  interlockRtmAsyn R1.6.3
+                  llrfHlsAsyn      R3.3.2
+
+R2.1.1       Kukhee Kim (Oct 9, 2020)
+             - update pyDM to include amplitude threshold
+             - force tag
+
+R2.1.1       Kukhee Kim (Oct 8, 2020)
+             - add amplitude threshold
+             - build with:
+                 llrfHls          R4.1.1
+                 interlockRtmAsyn R1.6.2
+                 llrfHlsAsyn      R3.3.1
+
+R2.1.0       Jesus Vasquez (Oct 8, 2020)
+             - Update RFCommon to version R1.7.0 and interlockRtmAsyn to version R1.6.1.
+             - PyDM: Add signal labels to the Demod and HLS screens.
+             - PyDM: show jitter PV in exp representation.
+
+R2.0.0        Kukhee Kim (Oct 7, 2020)
+             -force tag to include pyDM upgrade for adaptive feedback and rms/mean calculations
+
+R2.0.0        Kukhee Kim (Oct 6, 2020)
+             -merge adaptive_algirhtm branch to the master
+
+R2.0.0-pre-4  Kukhee Kim (Oct 6, 2020)
+             - add sioc-b084-rf60 for 1080Hz UED test stand
+
+R2.0.0-pre-3  Kukhee Kim (Oct 6, 2020)
+             - build with llrfHlsAsyn R3.3.0
+               reduce down number of BSA channels to 23
+               reduce down number of fast PVs to 23
+
+R2.0.0-pre-2 Kukhee Kim (Oct 5, 2020)
+             - tag with firmware bc54e9b
+
+R2.0.0-pre-1 Kukhee Kim (Oct 4, 2020)
+             - calculate rms/mean for all of windows and channels
+             - build with llrfHls R4.1.0
+             - build with llrfHlsAsyn R3.1.0
+             - build with interlockRtmAsyn R1.6.0
+
+R2.0.0-pre   Kukhee Kim (Oct 3, 2020)
+             - first tagged version for adpative_algorithm
+
+adaptive_algorithm      Kukhee Kim (Sep 29, 2020)
+             - Breanch out from R1.4.0 to devleop and test adative_alorithm
+             - build with llrfHls R4.0.0
+             - build with llrfHlsAsyn R3.0.0
+             - build with internlockRtmAsyn R1.5.0
+
+R1.4.0       Kukhee Kim (Sep 23, 2020)
+             - Support new firmware:
+                  . fix POC issue: work for each channel and also work for after the channel average
+                  . support amplitude conversion (engineering unit) and the amplitude feedback works with gineering unit
+                  . firmware based jitter (RMS) and mean calculation for PACT, AACT and Beam Voltage
+             - support engineering unit for RTM parameters:
+                  . beam voltage, beam current, reflected power and its threshold values
+             - support micor-second unit time axis for waveforms
+
+             - build with llrfHls R3.1.0
+             - build with llrfHlsAsyn R2.10.1
+             - build with interlockRtmAsy R1.3.0
+             - build with commonRF R1.4.0
+             - build with RFCommon R1.6.0
+             - build with iocAdmin R3.1.16-1.3.2
+
+
+R1.3.0       Jesus Vasquez (Aug 28, 2020)
+             - Enable the yamlDownloader to download and use the YAML from the FPGA's
+               PROM. Remove the local copies of YAML files, and keep only the ones with
+               local patches.
+             - Remove old FW images, and leave only the current version '5480190'.
+             - Re-structure the st.cmd scripts and move all the common part to a common
+               script which is then called by all the other init scripts.
+             - Comment out the definition of 'IOCS_APPL_TOP' in order to have an absolute
+               path for the 'TOP' variable.
+             - Update sioc-b084-rf54 st.cmd: this is a Gen1 system.
+             - PyDM: Remove POC PVs.
+
+R1.2.0       Kukhee Kim (Aug 27, 2020)
+             - build with interlockRtmAsyn R1.1.0 (firmware based rtm history buffer)
+             - work with firmware 5480190 (Aug 27, 2020)
+
+R1.1.0       Kukhee Kim (Aug 25, 2020)
+             - build with llrfHls API R3.0.0
+             - build with llrfHlsAsyn R2.8.0
+             - build with interlockRtmAsyn R1.0.0
+             - work with firmware 92379ba
+
+R1.0.3       Kukhee Kim (Aug 20, 2020)
+             - build with llrfHlsAsyn R2.7.1: PV name change for delegate PV from PDES to PREQ
+
+R1.0.2       Kukhee Kim (Aug 19, 2020)
+             - upgrade test stand to latest firmware (24df146)
+               sioc-b34-rf13:  Gen2
+               sioc-b084-rf52: Gen2
+               sioc-b084-rf53: Gen1
+               sioc-b084-rf54: Gen1
+
+R1.0.1       Kukhee Kim (Aug 19, 2020)
+              - add 24df146 version firmware and tarball files
+
+R1.0.0       Kukhee Kim (Aug 18, 2020)
+             - build with interlockRtmAsyn R0.2.2 (for slow PVs)
+             - build with llrfAmcAsyn R1.0.0 and llrfAmc R1.0.0
+             - build with llrfHls API R2.3.0 and llrfHlsAsyn R2.7.0
+
+R0.6.0       Jesus Vasquez (Aug 13, 2020)
+             - Update COMMONRF to R1.3.0 and RFCOMMON to R1.5.0
+             - Add CPSW commands to reset the PLL counters
+             - Add st.cmd scripts for gen1 IOCs
+             - Update EDM screens
+             - Update LLRFHLSASYN to R2.6.0 and INTERLOCKRTMASYN to R0.2.0
+             - Use a softlink to choose the appropiate st.cmd script version
+             - Create a st.cmd script for the Gen1 Upconverter
+             - Create a st.cmd script for the Gen2 Upconverter
+             - Add missing settings in sioc-b084-rf52/st.cmd
+             - set up sioc-b34-rf13 for Gen2 and complext window configuration
+             - set up Gen1 configuration for sioc-b34-rf13
+             - set up top screen for sioc-b34-rf13
+             - set up top screen for sioc-b084-rf53
+             - configure top screen for sioc-b084-rf52
+             - set up sioc-b084-rf54 for Gen1 configuration
+             - add BSA name for driver configuration and waveform processing
+             - add BSA PV name prefix
+             - set up priority and multiple thread for udp and rssi thread
+
+R0.5.1       Kukhee Kim (Aug 1, 2020)
+             - use complex window for sioc-b084-rf52
+
+R0.5.0       Kukhee Kim (Aug 1, 2020)
+             - merge gen2_support_v2
+
+R0.4.0       Kukhee KIm (July 31, 2020)
+             build with llrfHls R2.2.0 and llrfHlsAsyn R2.4.0
+             support baseband PV and complex window
+             support BSA and timeslot aware PVs
+
+R0.3.0       Kukhee Kim (July 20, 2020)
+             build with llrfHlsAsyn R2.2.1 and RFCommon R1.3.0
+             add new RF test stand
+             sioc-b084-rf54 - slot 2 @ shm-b084-sp15,   LLRF Gen1, for Bo's RF chassis test
+
+R0.2.0       Kukhee Kim (July 8, 2020)
+             build with llrfHlsAsyn R2.1.1 and tprPattern R1.4.1
+
+R0.1.0       Kukhee Kim (July 1, 2020)
+             add up interlockRtm
+             sioc-b34-rf13   - slot 3 @ shm-b34-sp02,    B34 test stand, LLRF Gen1 configuration
+             sioc-b084-rf52  - slot 4 @ shm-b084-sp19,   PCAV algorithm test with complex window (Gen1 Upconverter)
+             sioc-b084-rf53  - slot 6 @ shm-b084-sp19,   LLRF Gen2 UpConverter test
+
+R0.0.0       Kukhee Kim (June 12, 2020)
+             Initial import to git repo
+
+             sioc-b34-rf13   - slot 3 at shm-b34-sp02

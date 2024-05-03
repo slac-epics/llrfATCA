@@ -1,0 +1,144 @@
+{
+    "rate": {
+	"1080 Hz": {
+	    "ratemode": "Seq",
+	    "seqnum": "15",
+	    "seqbit": "0"
+	},
+	"540 Hz (even)": {
+	    "ratemode": "Seq",
+	    "seqnum": "14",
+	    "seqbit": "0"
+	},
+	"540Hz (odd)": {
+	    "ratemode": "Seq",
+	    "seqnum": "15",
+	    "seqbit": "1"
+	},
+	"360Hz (AC)": {
+	    "ratemode": "Seq",
+	    "seqnum": "13",
+	    "seqbit": "0"
+	},
+	"360Hz (V1)": {
+	    "ratemode": "Seq",
+	    "seqnum": "13",
+	    "seqbit": "1"
+	},
+	"360Hz (V2)": {
+	    "ratemode": "Seq",
+	    "seqnum": "13",
+	    "seqbit": "2"
+	},
+	"180Hz (AC0)": {
+	    "ratemode": "AC",
+	    "acrate": "60Hz",
+	    "tsmask": "21"
+	},
+	"180Hz (AC1)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "42"
+	},
+	"120Hz (AC0)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "9"
+	},
+	"120Hz (AC1)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "12"
+	},
+	"60Hz (AC0)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "1"
+	},
+	"60Hz (AC1)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "2"
+	},
+	"60Hz (AC2)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "4"
+	},
+	"60Hz (AC3)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "8"
+	},
+	"60Hz (AC4)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "16"
+	},
+	"60Hz (AC5)": {
+	    "ratemode": "AC",	    
+	    "acrate": "60Hz",
+	    "tsmask": "32"
+	},
+	"5Hz (AC0)": {
+	    "ratemode": "AC",	    
+	    "acrate": "5Hz",
+	    "tsmask": "1"
+	},
+	"5Hz (AC1)": {
+	    "ratemode": "AC",	    
+	    "acrate": "5Hz",
+	    "tsmask": "2"
+	},
+	"5Hz (AC2)": {
+	    "ratemode": "AC",	    
+	    "acrate": "5Hz",
+	    "tsmask": "4"
+	},
+	"5Hz (AC3)": {
+	    "ratemode": "AC",	    
+	    "acrate": "5Hz",
+	    "tsmask": "8"
+	},
+	"5Hz (AC4)": {
+	    "ratemode": "AC",	    
+	    "acrate": "5Hz",
+	    "tsmask": "16"
+	},
+	"5Hz (AC5)": {
+	    "ratemode": "AC",	    
+	    "acrate": "5Hz",
+	    "tsmask": "32"
+	},
+	"1Hz (AC0)": {
+	    "ratemode": "AC",	    
+	    "acrate": "1Hz",
+	    "tsmask": "1"
+	},
+	"1Hz (AC2)": {
+	    "ratemode": "AC",	    
+	    "acrate": "1Hz",
+	    "tsmask": "2"
+	},
+	"1Hz (AC3)": {
+	    "ratemode": "AC",	    
+	    "acrate": "1Hz",
+	    "tsmask": "4"
+	},
+	"1Hz (AC4)": {
+	    "ratemode": "AC",	    
+	    "acrate": "1Hz",
+	    "tsmask": "8"
+	},
+	"1Hz (AC5)": {
+	    "ratemode": "AC",	    
+	    "acrate": "1Hz",
+	    "tsmask": "16"
+	},
+	"1Hz (AC6)": {
+	    "ratemode": "AC",	    
+	    "acrate": "1Hz",
+	    "tsmask": "32"
+	}
+    }
+}

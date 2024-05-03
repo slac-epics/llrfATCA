@@ -1,0 +1,19 @@
+edm -eolc -x -m "DEVICE=SIOC:B34:RF13:0"  ATCACommon.edl  RFCommon edl RFUpConverter.edl  RFDownConverter.edl llrf_hls.edl &
+edm -eolc -x -m "CH=ADC0,WF=SIOC:B34:RF13:0:STR0:STREAM_SLOWSHORT0" rf_waveform.edl&
+edm -eolc -x -m "CH=ADC1,WF=SIOC:B34:RF13:0:STR0:STREAM_SLOWSHORT1" rf_waveform.edl&
+edm -eolc -x -m "DEVICE=SIOC:B34:RF13" Klystron_RTM_debugging.edl&
+
+#edm -eolc -x -m "DEV=SIOC:B34:RF13:0,N=9" iq_wf.edl &
+
+
+#edm -eolc -x -m "DEVICE=SIOC:B34:RF13:1"  ATCACommon.edl  &
+#edm -eolc -x -m "DEVICE=SIOC:B34:RF13:2"  ATCACommon.edl  &
+#edm -eolc -x -m "DEVICE=SIOC:B34:RF13:3"  ATCACommon.edl  &
+#edm -eolc -x -m "DEVICE=SIOC:B34:RF13:4"  ATCACommon.edl  &
+#edm -eolc -x -m "DEVICE=SIOC:B34:RF13:5"  ATCACommon.edl  &
+
+
+edm  -eolc -x -m "DEVICE=SIOC:B34:RF13,LOCA=B34,IOC_UNIT=RF13,INST=0" tprMain_final.edl &
+
+#edm -eolc -x -m "DEVICE=SIOC:B34:RF13,LOCA=B34,IOC_UNIT=RF13,INST=0" main.edl &
+

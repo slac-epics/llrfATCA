@@ -1,0 +1,3 @@
+dbpf("$(KLYS_PREFIX):SET_BC_ILK_RAW", "23.3")
+dbpf("$(KLYS_PREFIX):SET_BV_ILK_RAW", "37.5")
+dbpf("$(KLYS_PREFIX):SET_RE_ILK_RAW", "11.524")

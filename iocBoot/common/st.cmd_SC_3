@@ -1,0 +1,326 @@
+# Common env variables
+epicsEnvSet("IOC_NAME", "${PRIMARY}:${LOCA}:${UNIT}")
+epicsEnvSet("PREFIX0",  "${IOC_NAME}:0")
+
+# tag log messages with IOC name
+# How to escape the "iocrflab" as the PERL program
+# will try to repplace it.
+# So, uncomment the following and remove the backslash
+epicsEnvSet("EPICS\_IOC\_LOG_CLIENT_INET","${IOC}")
+
+# Setup the CA server port address
+epicsEnvSet("EPICS_CA_SERVER_PORT","5066")
+
+# *********************************************
+# **** Environment variables for LLRFAMCASYN ****
+epicsEnvSet("LLRFAMCASYN_PORT","LLRFAMCASYN")
+
+# *********************************************
+# **** Environment variables for YCPSWASYN ****
+
+# Point 'YAML_PATH' to the yaml_fixes directory.
+# This directory contains patched files which will be
+# used instead of the ones downloaded from the FPGA.
+# This is an absolute path.
+epicsEnvSet("YAML_PATH", "${TOP}/firmware/SC/hash-dirty/yaml_local")
+
+# Location to download the YAML file from the FPGA
+epicsEnvSet("YAML_DIR","${IOC_DATA}/${IOC}/yaml")
+
+# TOP yaml file, as an absolute path
+epicsEnvSet("YAML_TOP_FILE", "${YAML_DIR}/khkim/2/LlrfTCav2_project.yaml/000TopLevel.yaml")
+
+# ================================================================================
+# Defaults YAML file, used to initialize and setup a few default register values
+# ================================================================================
+epicsEnvSet("YAML_DEFAULTS_FILE", "${YAML_DIR}/config/defaults.yaml")
+
+
+# ========================================================
+# Support Large Arrays/Waveforms; Number in Bytes
+# Please calculate the size of the largest waveform
+# that you support in your IOC.  Do not just copy numbers
+# from other apps.  This will only lead to an exhaustion
+# of resources and problems with your IOC.
+# The default maximum size for a channel access array is
+# 16K bytes.
+# ========================================================
+# Uncomment and set appropriate size for your application:
+epicsEnvSet("EPICS_CA_MAX_ARRAY_BYTES", "21000000")
+
+# END: Additional environment variables
+# ====================================================================
+
+
+cd ${TOP}
+# ===========================================
+#  DBD LOADING and Registration
+# ===========================================
+## Register all support components
+dbLoadDatabase("dbd/llrfHLS_Sc.dbd",0,0)
+llrfHLS_Sc_registerRecordDeviceDriver(pdbbase)
+
+
+
+# ===================================================================
+## Load FPGA hierarchy from YAML
+# ====================================================================
+
+## yamlDownloader
+DownloadYamlFile("${FPGA_IP0}", "${YAML_DIR}")
+
+## cpswLoadYamlFile ( YAML hierarchy descrtiption file,
+##                    Root Device Name (optional; default = 'root'),
+##                    directory where YAML includes can be found (optional),
+##                    IP address for carrier board (override the IP address in YAML) )
+
+# load hierarchy yaml files
+cpswLoadYamlFile("${YAML_TOP_FILE}", "NetIODev", "", "${FPGA_IP0}", "MyRoot0")
+
+# Load the defautl configuration
+cpswLoadConfigFile("${YAML_DEFAULTS_FILE}", "mmio", "",  "MyRoot0")
+
+# =====================================================================
+## Begin: Configure the llrfAmcAsyn driver
+# =====================================================================
+
+# Set llrfAmc log level (0: Debug, 1: Warning, 2: Error (default), 3: None)
+#LlrfAmcAsynSetLogLevel(0)
+
+# LlrfAmcAsynConfig(
+#    Port Name)     # The name given to this port driver
+LlrfAmcAsynConfig("${LLRFAMCASYN_PORT}")
+
+# Set ASYN trace mask
+asynSetTraceMask("${LLRFAMCASYN_PORT}", -1, 0x01)
+
+# =====================================================================
+## End : Configure the llrfAmcAsyn driver
+# =====================================================================
+
+
+
+# ===============
+# crossbarControl
+# ===============
+# cross bar control for slot2
+#crossbarControlAsynDriverConfigure("crossbar0", "mmio/AmcCarrierCore/AxiSy56040", "MyRoot0")
+
+
+################################################################################
+# ATCA Carrier Slots downstream of slot 2 RTM, will receive 
+# timing over the backplane
+################################################################################
+# crossbar control ('output', 'inpput')
+#    output: 'RTM_OUT0' | 'FPGA' | 'BP' | 'RTM_OUT1'
+#    input:  'RTM_IN0' ['LCLS1'] | 'FPGA' | 'BP' | 'RTM_IN1' ['LCLS2']
+################################################################################
+#crossbarControl("FPGA", "BP")
+
+
+# =========================================================================
+# tprTrigger configure
+# =========================================================================
+# trigger control for slot 2
+tprTriggerAsynDriverConfigure("trig0", "mmio/AmcCarrierCore", "MyRoot0")
+
+
+# #################################
+# ATCA Common and RF Common Drivers
+# #################################
+# choose Gen1UpConverter Style yaml file
+# var(Gen2UpConvYaml, 0)  --- Gen1
+# var(Gen2UpConvYaml, 1)  --- Gen2
+var(Gen2UpConvYaml, 1)
+
+# choose Complex Average Window
+# var(ComplexAvgWindow, 0) --- average window for LLRF, default
+# var(ComplexAvgWindow, 1) --- phase detection waveform, frequency error detection waveform for PCAV
+#var(ComplexAvgWindow, 1)
+
+cpswATCACommonAsynDriverConfigure(  "atca0",      "mmio", "MyRoot0")
+
+cpswDebugStreamAsynDriverConfigure( "atca0_str0", 0x4000, "header_enabled", "Stream0", "Stream1", "Stream2", "Stream3")
+
+cpswDebugStreamAsynDriverConfigure( "atca0_str1", 0x4000, "header_enabled", "Stream4", "Stream5", "Stream6", "Stream7")
+
+cpswRFCommonAsynDriverConfigure(    "rfc0",       "mmio/AppTop/AppCore/Sysgen", "MyRoot0")
+
+cpswLlrfDownConvAsynDriverConfigure("dnc0",       "mmio/AppTop/AppCore/AmcMrLlrfDownConvert")
+
+cpswLlrfUpConvAsynDriverConfigure(  "upc0",       "mmio/AppTop/AppCore/AmcMrLlrfGen2UpConvert")
+
+# put a NULL macro for BSA PREFIX to disable LCLS-1 style BSA
+#llrfHlsAsynDriverConfigure(         "llrfHls0",   "mmio/AppTop/AppCore/Sysgen/LlrfFeedbackWrapper", "hlsStream", "")
+#interlockRtmAsynDriverConfigure(    "intRtm0",    "mmio", "MyRoot0")
+
+
+########################################################################
+# BEGIN: Load the record databases
+#######################################################################
+# =====================================================================
+# Load iocAdmin databases to support IOC Health and monitoring
+# =====================================================================
+dbLoadRecords("db/iocAdminSoft.db","IOC=${IOC_NAME}")
+dbLoadRecords("db/iocAdminScanMon.db","IOC=${IOC_NAME}")
+
+# The following database is a result of a python parser
+# which looks at RELEASE_SITE and RELEASE to discover
+# versions of software your IOC is referencing
+# The python parser is part of iocAdmin
+dbLoadRecords("db/iocRelease.db","IOC=${IOC_NAME}")
+
+# =====================================================================
+# Load database for autosave status
+# =====================================================================
+dbLoadRecords("db/save_restoreStatus.db", "P=${IOC_NAME}:")
+
+# =====================================================================
+#Load Additional databases:
+# =====================================================================
+# Load crossbarControl PVs
+dbLoadRecords("db/crossbarCtrl.db",      "DEV=${IOC_NAME}:0,PORT=crossbar0")
+
+# Load tprTrigger PVs
+# Need load database for UED as it is using LCLS-II timing protocol
+
+dbLoadRecords("db/tprTrig_ued.db",           "PORT=trig0,LOCA=${LOCA},IOC_UNIT=${UNIT},INST=${INST}")
+#dbLoadRecords("db/tprDeviceNamePV.db", "LOCA=B15,IOC_UNIT=RF99,INST=0,SYS=SYS2,NN=00,DEV_PREFIX=KLYS:LI28:21:")
+
+# Load RFCommon and ATCACommon PVs
+dbLoadRecords("db/ATCACommon.db",        "DEV=${IOC_NAME}:0,PORT=atca0")
+dbLoadRecords("db/StreamType.db",        "DEV=${IOC_NAME}:0:STR0,PORT=atca0_str0")
+dbLoadRecords("db/StreamShort.db",       "DEV=${IOC_NAME}:0:STR0,PORT=atca0_str0, NELM=4096, TSE=-2")
+dbLoadRecords("db/StreamType.db",        "DEV=${IOC_NAME}:0:STR1,PORT=atca0_str1")
+dbLoadRecords("db/StreamShort.db",       "DEV=${IOC_NAME}:0:STR1,PORT=atca0_str1, NELM=4096, TSE=-2")
+dbLoadRecords("db/RFCommon.db",          "DEV=${IOC_NAME}:0,PORT=rfc0")
+dbLoadRecords("db/LlrfUpConverter.db",   "DEV=${IOC_NAME}:0,PORT=upc0")
+dbLoadRecords("db/LlrfDownConverter.db", "DEV=${IOC_NAME}:0,PORT=dnc0")
+
+#dbLoadRecords("db/llrfHlsAsyn.db",       "TPR_PREFIX=TPR:${LOCA}:${UNIT}:0,DEV=${IOC_NAME}:0,PORT=llrfHls0")
+#dbLoadRecords("db/interlockRtm.db",      "PRIMARY=${PRIMARY},MICRO=${LOCA},UNIT=${UNIT}:0,PORT=intRtm0")
+
+# llrfAmcAsyn database
+dbLoadRecords("db/llrfAmcAsyn.db",       "P=${IOC_NAME},PORT=${LLRFAMCASYN_PORT}")
+
+# END: Loading the record databases
+########################################################################
+
+
+
+# =====================================================================
+## Begin: Setup autosave/restore
+# =====================================================================
+
+# ============================================================
+# If all PVs don't connect continue anyway
+# ============================================================
+save_restoreSet_IncompleteSetsOk(1)
+
+# ============================================================
+# created save/restore backup files with date string
+# useful for recovery.
+# ============================================================
+save_restoreSet_DatedBackupFiles(1)
+
+# ============================================================
+# Where to find the list of PVs to save
+# ============================================================
+set_requestfile_path("${IOC_DATA}/${IOC}/autosave-req")
+
+# ============================================================
+# Where to write the save files that will be used to restore
+# ============================================================
+set_savefile_path("${IOC_DATA}/${IOC}/autosave")
+
+# ============================================================
+# Prefix that is use to update save/restore status database
+# records
+# ============================================================
+save_restoreSet_status_prefix("${IOC_NAME}:")
+
+# Specify what save files should be restored and when.
+# Note: up to eight files can be specified for each pass.
+set_pass0_restoreFile("info_positions.sav")
+set_pass1_restoreFile("info_positions.sav")
+
+set_pass0_restoreFile("info_settings.sav")
+set_pass1_restoreFile("info_settings.sav")
+# ============================================================
+
+# =====================================================================
+# End: Setup autosave/restore
+# =====================================================================
+
+
+
+# =====================================================================
+# Channel Access Security:
+# This is required if you use caPutLog.
+# Set access security file
+# Load common LCLS Access Configuration File
+< ${ACF_INIT}
+
+# =============================================================
+# Start EPICS IOC Process (i.e. all threads will start running)
+# =============================================================
+iocInit()
+
+# =====================================================
+# Turn on caPutLogging:
+# Log values only on change to the iocLogServer:
+caPutLogInit("${EPICS_CA_PUT_LOG_ADDR}")
+caPutLogShow(2)
+# =====================================================
+
+## Start any sequence programs
+#seq sncExample,"user=mdewart"
+
+## ===========================================================
+## Start autosave routines to save our data
+## ===========================================================
+
+cd("${IOC_DATA}/${IOC}/autosave-req")
+makeAutosaveFiles()
+
+create_monitor_set("info_positions.req", 30, "")
+create_monitor_set("info_settings.req", 30, "")
+
+
+# This register gives timeout errors when it is read.
+# For now let's not read it until this problem is fixed
+# register path: /mmio/AmcCarrierSsrlRtmEth/AmcCarrierCore/Axi24LC64FT/MemoryArray
+#dbpf ${PREFIX}:C:A24LC64FT:MemoryArray:Rd.SCAN "Passive"
+
+# Setup loadConfig
+cd ${TOP}
+#dbpf ${PREFIX}:loadConfigFile "yaml/config/defaultsGenRTM.yaml"
+
+epicsThreadSleep(10.)
+
+#########################
+# Intialize Waveform PVs #
+##########################
+dbpf $(PREFIX0):ABL.PROC            1
+dbpf $(PREFIX0):PBL.PROC            1
+dbpf $(PREFIX0):ICPXWND0.PROC       1
+dbpf $(PREFIX0):QCPXWND0.PROC       1
+dbpf $(PREFIX0):ICPXWND1.PROC       1
+dbpf $(PREFIX0):QCPXWND1.PROC       1
+dbpf $(PREFIX0):ICPXWND2.PROC       1
+dbpf $(PREFIX0):QCPXWND2.PROC       1
+
+# ##########################
+# Initialize Waveform Engines
+# ##########################
+dbpf $(PREFIX0):WFENG0_INIT 1
+dbpf $(PREFIX0):WFENG0_INIT 0
+dbpf $(PREFIX0):WFENG1_INIT 1
+dbpf $(PREFIX0):WFENG1_INIT 0
+
+# ############
+# Enable DaqMux
+# ############
+dbpf $(PREFIX0):DAQMUX0_AUTOREARM  1
+dbpf $(PREFIX0):DAQMUX1_AUTOREARM  1
+

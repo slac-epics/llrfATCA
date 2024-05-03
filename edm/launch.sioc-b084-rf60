@@ -1,0 +1,4 @@
+edm  -eolc -x -m "DEVICE=SIOC:B084:RF60,LOCA=B084,IOC_UNIT=RF60,INST=0" tprMain_final.edl &
+
+
+# TPR:B084:RF60:0:SYS2_CLK

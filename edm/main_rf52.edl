@@ -1,0 +1,415 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1346
+y 325
+w 500
+h 600
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 4
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 34
+y 73
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Raw Waveform Streams"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "multi_waveform.edl"
+}
+menuLabel {
+  0 "multi_waveform"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 34
+y 113
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "ATCA Common"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ATCACommon.edl"
+}
+menuLabel {
+  0 "ATCACommon"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 34
+y 153
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "RF Common"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "RFCommon.edl"
+}
+menuLabel {
+  0 "RFCommon"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 34
+y 193
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Attn/Temp DonwConverter"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "RFDownConverter.edl"
+}
+menuLabel {
+  0 "RFDownConverter"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 34
+y 233
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Attn/Temp UpConverter"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "RFUpConverter.edl"
+}
+menuLabel {
+  0 "RFUpConverter"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 36
+y 411
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Tpr Mian"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tprMain_final.edl"
+}
+menuLabel {
+  0 "tprMain"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0,LOCA=B084,IOC_UNIT=RF52,INST=0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 36
+y 451
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Timing Pattern Diagnostics"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tprPatternDiag.edl"
+}
+menuLabel {
+  0 "tprPatternDiag"
+}
+symbols {
+  0 "DEVICE=TPR:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 36
+y 492
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Timing Event Diagnostics"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tprPatternEvent.edl"
+}
+menuLabel {
+  0 "tprPatternEvent"
+}
+symbols {
+  0 "DEVICE=TPR:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 35
+y 269
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "LLRF HLS"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "llrf_hls.edl"
+}
+menuLabel {
+  0 "llrf_hls"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 440
+y 11
+w 48
+h 18
+fgColor index 14
+bgColor index 5
+topShadowColor index 4
+botShadowColor index 14
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 33
+y 344
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Interlock RTM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "Klystron_RTM_debugging.edl"
+}
+menuLabel {
+  0 "Klystron_RTM_debugging"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 37
+y 309
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "IQ Waveforms"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "multi_iq_waveform.edl"
+}
+menuLabel {
+  0 "multi_iq_waveform"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 52
+y 550
+w 373
+h 24
+fgColor index 25
+bgColor index 6
+topShadowColor index 4
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Data Acquisition"
+numCmds 1
+commandLabel {
+  0 "Acquire Data"
+}
+command {
+  0 "/afs/slac/g/lcls/epics/iocTop/llrf_hls/R0.4.0/edm/run_rf52.daq"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 34
+y 378
+w 240
+h 26
+fgColor index 14
+bgColor index 4
+topShadowColor index 5
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "Trigger Config"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "timing_expert.edl"
+}
+menuLabel {
+  0 "Trigger Config"
+}
+symbols {
+  0 "DEVICE=SIOC:B084:RF52:0"
+}
+endObjectProperties
+

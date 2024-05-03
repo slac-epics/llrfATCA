@@ -1,0 +1,12 @@
+edm  -eolc -x -m "DEVICE=SIOC:B084:RF52,LOCA=B084,IOC_UNIT=RF52,INST=0" tprMain_final.edl &
+edm -eolc -x -m "DEVICE=SIOC:B084:RF52:0"  ATCACommon.edl  RFCommon edl RFUpConverter.edl  RFDownConverter.edl llrf_hls.edl &
+edm -eolc -x -m "CH=Stream0,WF=SIOC:B084:RF52:0:STR0:STREAM_SLOWSHORT0" rf_waveform.edl&
+edm -eolc -x -m "CH=Stream1,WF=SIOC:B084:RF52:0:STR0:STREAM_SLOWSHORT1" rf_waveform.edl&
+edm -eolc -x -m "CH=Stream2,WF=SIOC:B084:RF52:0:STR0:STREAM_SLOWSHORT2" rf_waveform.edl&
+edm -eolc -x -m "CH=Stream3,WF=SIOC:B084:RF52:0:STR0:STREAM_SLOWSHORT3" rf_waveform.edl&
+edm -eolc -x -m "DEVICE=SIOC:B084:RF52" Klystron_RTM_debugging.edl&
+
+#edm -eolc -x -m "DEV=SIOC:B084:RF52:0,N=9" iq_wf.edl &
+
+#edm  -eolc -x -m "DEVICE=TPR:B084:RF52:0" tprPatternDiag.edl tprPatternEvent.edl &
+
