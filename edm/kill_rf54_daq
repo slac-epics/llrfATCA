@@ -1,4 +1,0 @@
-#! /bin/bash
-
-for PID in  $(ps -ef | grep camonitor | grep SIOC:B084:RF54:0 | grep -v grep | awk '{print $2}'); do kill $PID ; done
-
