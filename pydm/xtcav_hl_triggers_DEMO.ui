@@ -771,7 +771,7 @@
             <string>{&quot;DEST&quot;: &quot;HXR&quot;}</string>
            </property>
            <property name="filename" stdset="0">
-            <string>xtcav_hl_triggers_sys_dest.ui</string>
+            <string>xtcav_hl_triggers_sys_dest_DEMO.ui</string>
            </property>
            <property name="loadWhenShown" stdset="0">
             <bool>true</bool>
