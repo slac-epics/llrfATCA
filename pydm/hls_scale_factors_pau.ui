@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>597</width>
+    <width>670</width>
     <height>556</height>
    </rect>
   </property>
@@ -23,7 +23,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>60</height>
         </size>
        </property>
@@ -42,7 +42,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_12">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -80,7 +80,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_9">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -121,7 +121,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -143,7 +143,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -165,7 +165,7 @@
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_10">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -222,6 +222,12 @@ amplitude
      </item>
      <item row="10" column="0" colspan="5">
       <widget class="QLabel" name="label_3">
+       <property name="minimumSize">
+        <size>
+         <width>650</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
@@ -291,7 +297,7 @@ amplitude
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -306,6 +312,15 @@ amplitude
        </property>
        <property name="filename" stdset="0">
         <string>hls_scale_factors_ch.ui</string>
+       </property>
+       <property name="loadWhenShown" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="disconnectWhenHidden" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="followSymlinks" stdset="0">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
@@ -326,7 +341,7 @@ amplitude
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -348,7 +363,7 @@ amplitude
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_11">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -387,7 +402,7 @@ scale factor</string>
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -427,7 +442,7 @@ factor</string>
       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
        <property name="minimumSize">
         <size>
-         <width>577</width>
+         <width>650</width>
          <height>25</height>
         </size>
        </property>
@@ -461,6 +476,12 @@ factor</string>
      </item>
      <item row="3" column="0" colspan="5">
       <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>650</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="font">
         <font>
          <weight>75</weight>
