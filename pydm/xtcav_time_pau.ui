@@ -93,8 +93,20 @@ PyDMLabel {
      <property name="toolTip">
       <string/>
      </property>
+     <property name="macros" stdset="0">
+      <string>{}</string>
+     </property>
      <property name="filename" stdset="0">
       <string>tpr_pau.ui</string>
+     </property>
+     <property name="loadWhenShown" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="disconnectWhenHidden" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="followSymlinks" stdset="0">
+      <bool>false</bool>
      </property>
     </widget>
    </item>
